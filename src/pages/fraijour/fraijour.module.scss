@@ -1,0 +1,23 @@
+@import "../../theme/index";
+
+.main {
+  background-color: $white;
+  position: relative;
+
+  .allBrands {
+    display: flex;
+    justify-content: center;
+    @include respond-to(tablet) {
+      padding-bottom: 60px;
+    }
+
+    @include respond-to(desktop) {
+      padding-bottom: 120px;
+    }
+
+    @include respond-to(largeDesktop) {
+      justify-content: flex-end;
+      padding-bottom: 65px;
+    }
+  }
+}

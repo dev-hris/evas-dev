@@ -1,0 +1,150 @@
+@import '../../../theme/index';
+
+.container {
+  background-color: $white;
+  border-radius: 20px;
+  padding: 20px 20px 25px;
+  position: relative;
+  overflow: hidden;
+
+  @include respond-to(tablet) {
+    padding: 20px 0px 30px 20px;
+  }
+
+  .wrapperMobile {
+    display: block;
+
+    .titleMobile {
+      display: flex;
+      justify-content: space-between;
+
+      .leftTitleMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 20px;
+
+        .logoMobile {
+          width: 61px;
+          height: 25px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: $dingley;
+          border-radius: 4px;
+          color: $white;
+          font-weight: 700;
+        }
+
+        .applicationMobile {
+          font-size: 18px;
+          color: $mineShaft;
+          margin-top: 20px;
+          width: 113px;
+          text-transform: uppercase;
+        }
+
+        .reviewBtnMobile {
+          width: 103px;
+          height: 40px;
+          border-radius: 10px;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 17px;
+          cursor: pointer;
+        }
+      }
+
+      .bottleImgMobile {
+        width: auto;
+        height: 237px;
+      }
+    }
+
+    .descriptionMobile {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: $mountainMist;
+      margin-top: 23px;
+    }
+
+    @include respond-to(tablet) {
+      display: none;
+    }
+  }
+
+  .wrapper {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 220px;
+
+    @include respond-to(tablet) {
+      display: flex;
+    }
+
+    .textWrapper {
+      font-weight: 600;
+      font-size: 10px;
+      line-height: 20px;
+
+      .logo {
+        width: 61px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $dingley;
+        border-radius: 4px;
+        color: $white;
+        font-weight: 700;
+      }
+
+      .application {
+        font-size: 18px;
+        color: $mineShaft;
+        margin-top: 20px;
+        text-transform: uppercase;
+      }
+
+      .description {
+        margin-top: 8px;
+        font-size: 15px;
+        font-weight: 500;
+        color: $mountainMist;
+      }
+    }
+
+    .reviewBtn {
+      cursor: pointer;
+      width: 103px;
+      height: 40px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+
+  .bottleImg {
+    position: absolute;
+    right: 0px;
+    display: none;
+
+    @include respond-to(tablet) {
+      top: auto;
+      bottom: 0px;
+      width: 120px;
+      display: block;
+    }
+
+    @include respond-to(desktop) {
+      top: 45px;
+      width: 223px;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@import '../../../theme/index';
+
+.container {
+  width: 100%;
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  grid-row-gap: 25px;
+
+  @include respond-to(desktop) {
+    margin-top: 47px;
+    grid-row-gap: 0px;
+    grid-column-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .themesWrapper {
+    grid-row-start: 2;
+    grid-row-end: 2;
+
+    @include respond-to(desktop) {
+      width: 520px;
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 1;
+      grid-row-end: 1;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@import '../../../../theme/index';
+
+.container {
+  cursor: pointer;
+
+  .textWrapper {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+
+    .text {
+      margin-left: 10px;
+      color: $mineShaft;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+
+      @include respond-to(desktop) {
+        font-size: 18px;
+        line-height: 26px;
+      }
+
+      &.active {
+        color: $studio;
+      }
+    }
+
+    .btnPlayer {
+      width: 30px;
+      height: 30px;
+
+      @include respond-to(desktop) {
+        width: 35px;
+      }
+    }
+  }
+
+  .line {
+    border: 1px solid $snuff;
+    width: 100%
+  }
+}
+
+.container:first-child > .textWrapper {
+  margin-top: 0px;
+}

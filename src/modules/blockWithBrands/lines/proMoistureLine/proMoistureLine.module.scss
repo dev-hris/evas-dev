@@ -1,0 +1,160 @@
+@import "../../../../theme/index";
+
+.container {
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background: url('../../../../assets/images/fraijourMain/productLine/proMoistureLine.jpg') no-repeat;
+  background-size: 365px 264px;
+  animation: show-block 0.5s ease-in-out;
+
+  @keyframes show-block {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+  }
+
+  @include respond-to(tablet) {
+    background-size: 719px 555px;
+  }
+
+  @include respond-to(desktop) {
+    background-size: 875px 675px;
+  }
+
+  @include respond-to(largeDesktop) {
+    background-size: 1140px 875px;
+  }
+
+  .popoverButton {
+    display: none;
+    @include respond-to(tablet){
+      display: block;
+    }
+  }
+
+  .poiner {
+    display: block;
+    @include respond-to(tablet) {
+      display: none;
+    }
+  }
+
+  .firstPopover {
+    margin-left: 79px;
+    margin-top: 97px;
+
+    .popover {
+      @include respond-to(desktop) {
+        bottom: -30px;
+      }
+      @include respond-to(largeDesktop) {
+        bottom: 22px;
+      }
+    }
+
+    @include respond-to(tablet) {
+      margin-left: 164px;
+      margin-top: 214px;
+    }
+  
+    @include respond-to(desktop) {
+      margin-left: 190px;
+      margin-top: 250px;
+    }
+
+    @include respond-to(largeDesktop) {
+      margin-left: 255px;
+      margin-top: 330px;
+    }
+  }
+
+  .secondPopover {
+    margin-left: 77px;
+    margin-top: 120px;
+    @include respond-to(tablet) {
+      margin-left: 110px;
+      margin-top: 264px;
+    }
+    
+    @include respond-to(desktop) {
+      margin-left: 119px;
+      margin-top: 315px;
+    }
+
+    @include respond-to(largeDesktop) {
+      margin-left: 189px;
+      margin-top: 415px;
+    }
+  }
+
+  .thirdPopover {
+    margin-left: 76px;
+    margin-top: 183px;
+
+    .popover {
+      @include respond-to(tablet) {
+        margin-left: -67px;
+      }
+      @include respond-to(desktop) {
+        margin-left: -24px;
+      }
+      @include respond-to(largeDesktop) {
+        margin-left: 0px;
+      }
+    }
+
+    @include respond-to(tablet) {
+      margin-left: 106px;
+      margin-top: 419px;
+    }
+
+    @include respond-to(desktop) {
+      margin-left: 119px;
+      margin-top: 513px;
+    }
+
+    @include respond-to(largeDesktop) {
+      margin-left: 163px;
+      margin-top: 659px;
+    }
+  }
+
+  .fourthPopover {
+    margin-left: 31px;
+    margin-top: 86px;
+
+    .popover {
+      @include respond-to(tablet) {
+        bottom: -24px;
+      }
+      @include respond-to(desktop) {
+        bottom: -35px;
+      }
+      @include respond-to(largeDesktop) {
+        bottom: 22px;
+      }
+    }
+
+    @include respond-to(tablet) {
+      margin-left: 22px;
+      margin-top: 180px;
+    }
+
+    @include respond-to(desktop) {
+      margin-left: 25px;
+      margin-top: 225px;
+    }
+
+    @include respond-to(largeDesktop) {
+      margin-left: 50px;
+      margin-top: 284px;
+    }
+  }
+}
+

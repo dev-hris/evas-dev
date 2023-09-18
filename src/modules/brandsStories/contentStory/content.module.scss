@@ -1,0 +1,119 @@
+@import '../../../theme/index';
+
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 10px 10px 35px 10px;
+  background: $white30;
+  border-radius: 25px 25px 0px 0px;
+
+  .textWrapper {
+    margin-top: 10px;
+    padding-left: 18px;
+    padding-right: 17px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $balticSea;
+  }
+
+  .productWrapper {
+    padding-left: 18px;
+    padding-right: 17px;
+    margin-top: 18px;
+
+    .productTitle {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 20px;
+      color: $balticSea;
+    }
+
+    .productLink {
+      display: flex;
+      justify-content: space-between;
+      .titleLink {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        &.portage {
+          color: $portage;
+        }
+        &.ronchi {
+          color: $ronchi;
+        }
+        &.newYorkPink {
+          color: $newYorkPink;
+        }
+        &.indigo {
+          color: $indigo
+        }
+        &.greenSmoke {
+          color: $greenSmoke;
+        }
+        &.aquaForest {
+          color: $aquaForest
+        }
+      }
+    }
+  }
+
+  .btn {
+    width: 42px;
+    height: 42px;
+  }
+  
+  .iconArrow {
+    width: 15px;
+  }
+
+  .title {
+    background-color: $white50;
+    width: 100%;
+    height: 79px;
+    border-radius: 20px;
+    padding: 14px 17px 20px 18px;
+    box-sizing: border-box;
+    display: flex;
+
+    .text {
+      width: 100%;
+
+      .line {
+        color: $balticSea;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+      }
+
+      .titleName {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+
+        &.portage {
+          color: $portage;
+        }
+        &.ronchi {
+          color: $ronchi;
+        }
+        &.newYorkPink {
+          color: $newYorkPink;
+        }
+        &.indigo {
+          color: $indigo
+        }
+        &.greenSmoke {
+          color: $greenSmoke;
+        }
+        &.aquaForest {
+          color: $aquaForest
+        }
+      }
+    }
+  }
+}

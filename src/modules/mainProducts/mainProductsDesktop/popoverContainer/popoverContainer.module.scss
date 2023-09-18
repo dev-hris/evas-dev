@@ -1,0 +1,134 @@
+@import '../../../../theme/index.scss';
+
+.container {
+  width: 365px;
+  height: 380px;
+  padding: 2px 2px 0px 3px;
+  box-sizing: border-box;
+
+  .titleContainer {
+    position: relative;
+    width: 360px;
+    min-height: 162px;
+
+    .imgWrapper {
+      width: 360px;
+      border-radius: 30px;
+      position: absolute;
+      bottom: 0;
+      animation: showWithOpacity 0.5s ease-in-out;
+    }
+
+    .title {
+      position: absolute;
+      display: flex;
+      box-sizing: border-box;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0px 24px;
+      left: 0px;
+      bottom: 20px;
+      color: $white;
+
+      .lineText {
+        opacity: 0.65;
+        font-size: 15px;
+        margin-left: 2px;
+        font-weight: 400;
+      }
+
+      .titleNameText {
+        font-weight: 600px;
+        font-size: 26px;
+        line-height: 26px;
+      }
+    }
+  }
+
+  .btnToLine {
+    width: 34px;
+    height: 34px;
+    .iconToLine {
+      width: 14px;
+      height: 9px;
+      transform: rotate(270deg);
+    }
+
+    >svg>path {
+      fill: none;
+      stroke: $white;
+    }
+  }
+
+  .bodyContainer {
+    margin: 14px 33px 20px 20px;
+    width: 312px;
+
+    .productText {
+      margin-left: 9px;
+      font-size: 15px;
+      line-height: 20px;
+      font-weight: 400;
+
+      &.textNewYorkPink {
+        color: $newYorkPink;
+      }
+
+      &.textIndigo {
+        color: $indigo;
+      }
+
+      &.textAquaForest {
+        color: $aquaForest;
+      }
+
+      &.textGreenSmoke {
+        color: $greenSmoke;
+      }
+
+      &.textPortage {
+        color: $portage;
+      }
+
+      &.textRonchi {
+        color: $ronchi;
+      }
+    }
+
+    .productNameText {
+      margin-top: 3px;
+      margin-left: 7px;
+      color: $balticSea;
+      font-size: 22px;
+      line-height: 26px;
+      font-weight: 400;
+    }
+
+    .productInfoText {
+      margin-top: 5px;
+      margin-left: 9px;
+      font-size: 15px;
+      line-height: 20px;
+      color: $balticSea;
+      font-weight: 400;
+      width: 303px;
+    }
+
+    .btn {
+      margin-top: 16px;
+      width: 140px;
+      height: 40px;
+      border-radius: 30px;
+      font-size: 14px;
+      padding: 11px 20px;
+      justify-content: space-between;
+      font-weight: 600;
+
+    }
+
+    .iconArrow {
+      width: 15px;
+    }
+  }
+}

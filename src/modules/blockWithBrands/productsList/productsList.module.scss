@@ -1,0 +1,312 @@
+@import "../../../theme/index";
+
+.productsList {
+  width: 340px;
+  margin-top: 20px;
+  margin-left: 25px;
+
+  @include respond-to(tablet) {
+    margin-top: 10px;
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  @include respond-to(desktop) {
+    max-height: 238px;
+  }
+
+  .title {
+    color: $mineShaft50;
+    padding-bottom: 15px;
+    display: block;
+
+    @include respond-to(tablet) {
+      display: none;
+    }
+
+    @include respond-to(desktop) {
+      display: block;
+    }
+  }
+
+  .titleTablet {
+    color: $mineShaft50;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 14px;
+    border-bottom: 1px solid $mineShaft25;
+
+    @include respond-to(tablet) {
+      display: flex;
+    }
+
+    @include respond-to(desktop) {
+      display: none;
+    }
+
+    .openButton {
+      width: 22px;
+      height: 22px;
+      border: none;
+      border-radius: 11px;
+      padding: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $athensGray;
+
+      // core 
+      &Portage:hover {
+        background: $portage;
+      }
+
+      // WormMood
+      &AquaForest:hover {
+        background: $aquaForest;
+      }
+
+      //HeartLeaf
+      &GreenSmoke:hover {
+        background: $greenSmoke;
+      }
+
+      // pro M
+      &Indigo:hover {
+        background: $lightPortage;
+      }
+
+      // boime
+      &NewYorkPink:hover {
+        background: $newYorkPink;
+      }
+
+      // honey 
+      &Ronchi:hover {
+        background: $ronchi;
+      }
+
+    }
+
+    .openButtonActive {
+
+      // core 
+      &Portage {
+        background: $portage;
+      }
+
+      // WormMood
+      &AquaForest {
+        background: $aquaForest;
+      }
+
+      //HeartLeaf
+      &GreenSmoke {
+        background: $greenSmoke;
+      }
+
+      // pro M
+      &Indigo {
+        background: $lightPortage;
+      }
+
+      // boime
+      &NewYorkPink {
+        background: $newYorkPink;
+      }
+
+      // honey 
+      &Ronchi {
+        background: $ronchi;
+      }
+    }
+  }
+
+  .titleTabletActive {
+    color: $mineShaft;
+  }
+
+  .products {
+    display: flex;
+    flex-direction: column;
+    height: 225px;
+
+    @include respond-to(tablet) {
+      display: none;
+    }
+
+    @include respond-to(desktop) {
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+      max-height: 200px;
+      padding-bottom: 7px;
+      border-bottom: 1px solid $mineShaft25;
+    }
+
+    @include respond-to(largeDesktop) {
+      max-height: 500px;
+    }
+  }
+
+  .productsTablet {
+    display: none;
+
+    @include respond-to(tablet) {
+      display: block;
+      overflow-y: hidden;
+      animation: open 0.5s ease-in-out;
+      animation-fill-mode: forwards;
+    }
+
+    @include respond-to(desktop) {
+      display: none;
+    }
+
+    @keyframes open {
+      0% {
+        height: 0px
+      }
+
+      2% {
+        padding-top: 14px;
+        border-bottom: 1px solid $mineShaft25;
+        height: 10px;
+      }
+
+      100% {
+        overflow-y: scroll;
+        padding-top: 14px;
+        border-bottom: 1px solid $mineShaft25;
+        height: 192px;
+      }
+    }
+  }
+
+  .productsTabletClose {
+    display: none;
+    animation: close 0.4s ease-in-out;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+
+    @keyframes close {
+      0% {
+        padding-top: 14px;
+        height: 192px;
+        display: block;
+      }
+
+      99% {
+        padding-top: 0px;
+        height: 0px;
+        display: block;
+      }
+
+      100% {
+        height: 0px;
+        display: none;
+      }
+    }
+  }
+
+  .productWithBtnWrapper {
+    display: flex;
+    align-items: baseline;
+
+    .btnLink {
+      display: none;
+
+      &.active {
+        margin-left: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+
+        >svg {
+          width: 11px;
+          height: auto;
+        }
+      }
+
+      @include respond-to(tablet) {
+        display: none;
+
+        &.active {
+          display: none;
+        }
+      }
+    }
+
+    .product {
+      border: none;
+      width: fit-content;
+      height: 30px;
+      background: none;
+      text-align: left;
+      padding: 0;
+      font-weight: 700;
+      line-height: 20px;
+      font-size: 14px;
+      margin-bottom: 10px;
+      color: $dustyGray;
+      text-transform: uppercase;
+
+      &:hover {
+        color: $mineShaft;
+      }
+    }
+
+    .productActive {
+      color: $mineShaft;
+    }
+  }
+
+  .scroll {
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  .scroll::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), $white);
+  }
+
+
+  .productsScroller {
+    overflow-y: scroll;
+    width: 100%;
+    max-height: 100%;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  .productsScroller::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar for Chrome, Safari and Opera */
+  }
+
+  .desciprtion {
+    position: absolute;
+    left: 0px;
+    display: block;
+    width: 316px;
+    border-top: 1px solid $mineShaft25;
+    padding: 15px 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: $mineShaft;
+
+    @include respond-to(tablet) {
+      display: none;
+    }
+  }
+}

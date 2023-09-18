@@ -1,0 +1,197 @@
+@import "../../../../theme/index";
+
+.container {
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background: url('../../../../assets/images/fraijourMain/productLine/yuzuHoneyLine.jpg') no-repeat;
+  background-size: 365px 264px;
+  animation: show-block 0.5s ease-in-out;
+
+  @keyframes show-block {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+  }
+
+  @include respond-to(tablet) {
+    background-size: 719px 555px;
+  }
+
+  @include respond-to(desktop) {
+    background-size: 875px 675px;
+  }
+
+  @include respond-to(largeDesktop) {
+    background-size: 1140px 875px;
+  }
+
+  .popoverButton {
+    display: none;
+    @include respond-to(tablet){
+      display: block;
+    }
+  }
+
+  .poiner {
+    display: block;
+    @include respond-to(tablet) {
+      display: none;
+    }
+  }
+
+  .firstPopover {
+    margin-left: 33px;
+    margin-top: 90px;
+
+    .popover {
+      @include respond-to(tablet) {
+        bottom: 14px;
+      }
+      @include respond-to(desktop) {
+        margin-left: 31px;
+        bottom: -69px;
+      }
+      @include respond-to(largeDesktop) {
+        margin-left: 22px;
+        bottom: 22px;
+      }
+    }
+    @include respond-to(tablet) {
+      margin-left: 60px;
+      margin-top: 203px;
+    }
+
+    @include respond-to(desktop) {
+      margin-left: 63px;
+      margin-top: 233px;
+    }
+
+    @include respond-to(largeDesktop) {
+      margin-left: 95px;
+      margin-top: 319px;
+    }
+  }
+
+  .secondPopover {
+    margin-left: 46px;
+    margin-top: 99px;
+
+    .popover {
+      @include respond-to(desktop) {
+        margin-left: 11px;
+        bottom: 5px;
+      }
+      @include respond-to(largeDesktop) {
+        margin-left: 22px;
+        bottom: 22px;
+      }
+    }
+
+    @include respond-to(tablet) {
+      margin-left: 57px;
+      margin-top: 218px;
+    }
+
+    @include respond-to(desktop) {
+      margin-left: 67px;
+      margin-top: 258px;
+    }
+
+    @include respond-to(largeDesktop) {
+      margin-left: 94px;
+      margin-top: 349px;
+    }
+  }
+
+  .thirdPopover {
+    margin-left: 64px;
+    margin-top: 111px;
+    @include respond-to(tablet) {
+      margin-left: 96px;
+      margin-top: 245px;
+    }
+
+    @include respond-to(desktop) {
+      margin-left: 102px;
+      margin-top: 293px;
+    }
+
+    @include respond-to(largeDesktop) {
+      margin-left: 153px;
+      margin-top: 384px;
+    }
+  }
+
+  .fourthPopover {
+    margin-left: 70px;
+    margin-top: 134px;
+    @include respond-to(tablet) {
+      margin-left: 97px;
+      margin-top: 282px;
+    }
+
+    @include respond-to(desktop) {
+      margin-left: 93px;
+      margin-top: 340px;
+    }
+
+    @include respond-to(largeDesktop) {
+      margin-left: 166px;
+      margin-top: 454px;
+    }
+  }
+
+  .fifthPopover {
+    margin-left: 53px;
+    margin-top: 92px;
+
+    .popover {
+      @include respond-to(desktop) {
+        bottom: -32px;
+      }
+      @include respond-to(largeDesktop) {
+        bottom: 22px;
+      }
+    }
+    @include respond-to(tablet) {
+      margin-left: 67px;
+      margin-top: 200px;
+    }
+
+    @include respond-to(desktop) {
+      margin-left: 76px;
+      margin-top: 232px;
+    }
+
+    @include respond-to(largeDesktop) {
+      margin-left: 107px;
+      margin-top: 320px;
+    }
+  }
+
+  .sixthPopover {
+    margin-left: 20px;
+    margin-top: 120px;
+    @include respond-to(tablet) {
+      margin-left: -7px;
+      margin-top: 258px;
+    }
+
+    @include respond-to(desktop) {
+      margin-left: -7px;
+      margin-top: 305px;
+    }
+
+    @include respond-to(largeDesktop) {
+      margin-left: -7px;
+      margin-top: 415px;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@import "../../../../theme/index";
+
+.container {
+  width: 230px;
+  padding: 20px 20px 14px 20px;
+  @include respond-to(desktop) {
+    width: 220px;
+    padding: 30px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    @include respond-to(desktop) {
+      margin-bottom: 0px;
+    }
+  }
+
+  .text {
+    color: $balticSea;
+    font-weight: 400;
+    @include respond-to(desktop) {
+      margin-bottom: 9px;
+    }
+  }
+
+  .title {
+    @extend .text;
+    width: 195px;
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .description {
+    @extend .text;
+    width: 219px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .buttonTablet {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    @include respond-to(desktop) {
+      display: none;
+    }
+  }
+
+  .button {
+    display: none;
+    @include respond-to(desktop) {
+      display: flex;
+      width: 140px;
+      height: 40px;
+      border-radius: 30px;
+      font-size: 14px;
+      padding: 11px 20px;
+      justify-content: space-between;
+      font-weight: 600;
+    }
+  }
+
+  .evasBtnArrow {
+    width: 15px;
+  }
+}

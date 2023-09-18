@@ -1,0 +1,304 @@
+@import "../../theme/index";
+
+.preloader {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 732px;
+  @include respond-to(tablet){
+    height: 474px;
+    padding-top: 103px;
+    padding-bottom: 164px;
+  }
+
+  @include respond-to(desktop) {
+    height: 495px;
+    padding-top: 155px;
+    padding-bottom: 180px;
+  }
+
+  .productContainer {
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+
+    @include respond-to(tablet) {
+      width: 968px;
+    }
+
+    @include respond-to(desktop) {
+      width: 1088px;
+    }
+
+    .logo {
+      width: 220px;
+      height: 69px;
+      margin-bottom: 301px;
+      @include respond-to(tablet) {
+        width: 384px;
+        height: 120px;
+        margin-bottom: 0px;
+      }
+
+      svg {
+        width: 100%;
+        height: inherit;
+      }
+    }
+
+    .circle {
+      width: 100%;
+    }
+
+    .circle1 {
+      position: absolute;
+      left: 78px;
+      top: 303px;
+      width: 103px;
+      height: 103px;
+      @include respond-to(tablet) {
+        width: 142px;
+        height: 142px;
+        left: 0px;
+        top: 172px;
+      }
+
+      @include respond-to(desktop) {
+        width: 176px;
+        height: 176px;
+      }
+    }
+
+    .circle2 {
+      position: absolute;
+      left: 30px;
+      top: 521px;
+      width: 150px;
+      height: 150px;
+
+      @include respond-to(tablet) {
+        width: 130px;
+        height: 130px;
+        left: 232px;
+        top: 0px;
+      }
+
+      @include respond-to(desktop) {
+        width: 150px;
+        height: 150px;
+      }
+    }
+
+    .circle3 {
+      position: absolute;
+      display: none;
+
+      @include respond-to(tablet) {
+        width: 120px;
+        height: 120px;
+        left: 677px;
+        top: 17px;
+        display: block;
+      }
+
+      @include respond-to(desktop) {
+        width: 166px;
+        height: 166px;
+      }
+    }
+
+    .circle4 {
+      position: absolute;
+      width: 132px;
+      height: 132px;
+      right: 157px;
+      bottom: 570px;
+
+      @include respond-to(tablet) {
+        width: 180px;
+        height: 180px;
+        right: 0px;
+        bottom: 0px;
+      }
+
+      @include respond-to(desktop) {
+        width: 217px;
+        height: 217px;
+      }
+    }
+
+    .circle5 {
+      position: absolute;
+      left: 165px;
+      bottom: 205px;
+      width: 73px;
+      height: 73px;
+      @include respond-to(tablet) {
+        width: 108px;
+        height: 108px;
+        left: 297px;
+        bottom: 61px;
+      }
+    }
+
+    .label1 {
+      position: absolute;
+      display: none;
+      @include respond-to(tablet) {
+        display: block;
+        right: 688px;
+        top: 158px;
+      }
+
+      @include respond-to(desktop) {
+        right: 750px;
+        top: 202px;
+      }
+    }
+
+    .label2 {
+      position: absolute;
+      left: 219px;
+      top: 478px;
+      @include respond-to(tablet) {
+        left: 326px;
+        top: 24px;
+      }
+
+      @include respond-to(desktop) {
+       left: 341px;
+       top: 17px;
+      }
+    }
+
+    .label3 {
+      position: absolute;
+      left: 14px;
+      top: 23px;
+      @include respond-to(tablet) {
+        left: 440px;
+        top: 121px;
+      }
+    }
+
+    .label4 {
+      position: absolute;
+      display: none;
+      @include respond-to(tablet) {
+        left: 578px;
+        top: 56px;
+        display: block;
+      }
+
+      @include respond-to(desktop) {
+        left: 591px;
+        top: 56px;
+      }
+    }
+
+    .label5 {
+      position: absolute;
+      right: 0px;
+      top: 89px;
+      @include respond-to(tablet) {
+        right: 28px;
+        top: 182px;
+      }
+    }
+
+    .label6 {
+      position: absolute;
+      right: 95px;
+      bottom: 315px;
+      @include respond-to(tablet) {
+        right: 51px;
+        bottom: 118px;
+      }
+
+      @include respond-to(desktop) {
+        right: 143px;
+        bottom: 128px;
+      }
+    }
+
+    .label7 {
+      position: absolute;
+      right: 18px;
+      top: 279px;
+      @include respond-to(tablet) {
+        right: 216px;
+        top: 286px;
+      }
+
+      @include respond-to(desktop) {
+        right: 310px;
+        top: 280px;
+      }
+    }
+
+    .label8 {
+      position: absolute;
+      display: none;
+      @include respond-to(tablet) {
+        left: 456px;
+        bottom: 71px;
+        display: block;
+      }
+
+      @include respond-to(desktop) {
+        left: 515px;
+        bottom: 69px;
+      }
+    }
+
+    .label9 {
+      position: absolute;
+      left: 15px;
+      bottom: 395px;
+      @include respond-to(tablet) {
+        left: 364px;
+        bottom: 123px;
+      }
+
+      @include respond-to(desktop) {
+        left: 364px;
+        bottom: 131px;
+      }
+    }
+
+    .label10 {
+      position: absolute;
+      left: 112px;
+      bottom: 119px;
+      @include respond-to(tablet) {
+        left: 196px;
+        bottom: 45px;
+      }
+
+      @include respond-to(desktop) {
+        left: 207px;
+        bottom: 27px;
+      }
+    }
+
+    .label11 {
+      position: absolute;
+      right: 51px;
+      bottom: 37px;
+      display: block;
+      @include respond-to(tablet) {
+        display: none;
+      }
+    }
+  }
+}

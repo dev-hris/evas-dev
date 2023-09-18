@@ -1,0 +1,35 @@
+@import "../../theme/index";
+
+.main {
+  background-color: $white;
+
+  .section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90px;
+    @include respond-to(mobile) {
+      margin-bottom: 224px;
+    }
+    @include respond-to(desktop) {
+      margin-bottom: 163px;
+    }
+    @include respond-to(largeDesktop) {
+      margin-bottom: 178px;
+    }
+  }
+
+  .brand {
+    display: flex;
+    justify-content: center;
+    @include respond-to(desktop) {
+      padding: 0px 70px;
+      justify-content: flex-end;
+    }
+  }
+
+  .lines {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,57 @@
+@import '../../../../theme/index';
+
+.container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  transition: 0.5s;
+  &.active {
+    transition: 0.5s;
+  }
+
+  @include respond-to(tablet) {
+    height: 600px;
+    padding-top: 260px;
+    grid-template-columns: repeat(6, 170px);
+    grid-template-rows: repeat(1, 343px);
+    &.active {
+      padding-top: 320px;
+      column-gap: 0px;
+    }
+  }
+
+  @include respond-to(desktop) {
+    height: 632px;
+    padding-top: 240px;
+    grid-template-columns: repeat(6, 215px);
+    grid-template-rows: repeat(1, 392px);
+    column-gap: 2px;
+    &.active {
+      padding-top: 320px;
+      column-gap: 0px;
+    }
+  }
+
+  @include respond-to(largeDesktop) {
+    height: 820px;
+    padding-top: 326px;
+    grid-template-columns: repeat(6, 270px);
+    grid-template-rows: repeat(1, 590px);
+    column-gap: 30px;
+    &.active {
+      padding-top: 400px;
+      column-gap: 0px;
+    }
+  }
+}

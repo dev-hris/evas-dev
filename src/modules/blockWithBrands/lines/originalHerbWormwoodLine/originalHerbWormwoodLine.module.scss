@@ -1,0 +1,249 @@
+@import "../../../../theme/index";
+
+.container {
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background: url('../../../../assets/images/fraijourMain/productLine/originalHerbWormwoodLine.jpg') no-repeat;
+  background-size: 365px 264px;
+  animation: show-block 0.5s ease-in-out;
+
+  @keyframes show-block {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+  }
+
+  @include respond-to(tablet) {
+    background-size: 719px 555px;
+  }
+
+  @include respond-to(desktop) {
+    background-size: 875px 675px;
+  }
+
+  @include respond-to(largeDesktop) {
+    background-size: 1140px 875px;
+  }
+
+  .popoverButton {
+    display: none;
+    @include respond-to(tablet){
+      display: block;
+    }
+  }
+
+  .poiner {
+    display: block;
+    @include respond-to(tablet) {
+      display: none;
+    }
+  }
+
+  .firstPopover {
+    margin-left: 40px;
+    margin-top: 158px;
+    @include respond-to(tablet) {
+      margin-left: 93px;
+      margin-top: 320px;
+    }
+
+    @include respond-to(desktop) {
+      margin-left: 103px;
+      margin-top: 383px;
+    }
+
+    @include respond-to(largeDesktop) {
+      margin-left: 138px;
+      margin-top: 512px;
+    }
+  }
+
+  .secondPopover {
+    margin-left: 35px;
+    margin-top: 93px;
+
+    .popover {
+      @include respond-to(desktop) {
+        bottom: -20px;
+      }
+      @include respond-to(largeDesktop) {
+        bottom: 22px;
+      }
+    }
+
+    @include respond-to(tablet) {
+      margin-left: 32px;
+      margin-top: 203px;
+    }
+
+    @include respond-to(desktop) {
+      margin-left: 25px;
+      margin-top: 233px;
+    }
+
+    @include respond-to(largeDesktop) {
+      margin-left: 61px;
+      margin-top: 319px;
+    }
+  }
+
+  .thirdPopover {
+    margin-left: 30px;
+    margin-top: 171px;
+    @include respond-to(tablet) {
+      margin-left: 13px;
+      margin-top: 359px;
+    }
+
+    @include respond-to(desktop) {
+      margin-left: 6px;
+      margin-top: 431px;
+    }
+
+    @include respond-to(largeDesktop) {
+      margin-left: 33px;
+      margin-top: 552px;
+    }
+  }
+
+  .fourthPopover {
+    margin-left: 24px;
+    margin-top: 82px;
+
+    .popover {
+      @include respond-to(desktop) {
+        margin-left: 26px;
+        bottom: -61px;
+      }
+
+      @include respond-to(largeDesktop) {
+        margin-left: 22px;
+        bottom: 22px;
+      }
+    }
+    @include respond-to(tablet) {
+      margin-left: 3px;
+      margin-top: 184px;
+    }
+
+    @include respond-to(desktop) {
+      margin-left: -4px;
+      margin-top: 216px;
+    }
+
+    @include respond-to(largeDesktop) {
+      margin-left: 3px;
+      margin-top: 302px;
+    }
+  }
+
+  .fifthPopover {
+    margin-left: 43px;
+    margin-top: 162px;
+    @include respond-to(tablet) {
+      margin-left: 45px;
+      margin-top: 345px;
+    }
+
+    @include respond-to(desktop) {
+      margin-left: 47px;
+      margin-top: 411px;
+    }
+
+    @include respond-to(largeDesktop) {
+      margin-left: 86px;
+      margin-top: 552px;
+    }
+  }
+
+  .sixthPopover {
+    margin-left: 39px;
+    margin-top: 89px;
+
+    .popover {
+      @include respond-to(tablet) {
+        bottom: -27px;
+      }
+      @include respond-to(largeDesktop) {
+        bottom: 22px;
+      }
+    }
+    @include respond-to(tablet) {
+      margin-left: 37px;
+      margin-top: 194px;
+    }
+
+    @include respond-to(desktop) {
+      margin-left: 28px;
+      margin-top: 228px;
+    }
+
+    @include respond-to(largeDesktop) {
+      margin-left: 57px;
+      margin-top: 303px;
+    }
+  }
+  
+  .seventhPopover {
+    margin-left: 25px;
+    margin-top: 175px;
+    @include respond-to(tablet) {
+      margin-left: 12px;
+      margin-top: 377px;
+    }
+
+    @include respond-to(desktop) {
+      margin-left: 10px;
+      margin-top: 445px;
+    }
+
+    @include respond-to(largeDesktop) {
+      margin-left: 30px;
+      margin-top: 597px;
+    }
+  }
+  
+  .eighthPopover {
+    margin-left: 34px;
+    margin-top: 103px;
+    @include respond-to(tablet) {
+      margin-left: 27px;
+      margin-top: 219px;
+    }
+
+    @include respond-to(desktop) {
+      margin-left: 13px;
+      margin-top: 252px;
+    }
+
+    @include respond-to(largeDesktop) {
+      margin-left: 38px;
+      margin-top: 349px;
+    }
+  }
+  
+  .ninthPopover {
+    margin-left: 18px;
+    margin-top: 146px;
+    @include respond-to(tablet) {
+      margin-left: -10px;
+      margin-top: 318px;
+    }
+
+    @include respond-to(desktop) {
+      margin-left: -16px;
+      margin-top: 377px;
+    }
+
+    @include respond-to(largeDesktop) {
+      margin-left: -15px;
+      margin-top: 497px;
+    }
+  }
+}

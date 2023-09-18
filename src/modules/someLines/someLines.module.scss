@@ -1,0 +1,49 @@
+@import "../../theme/index";
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  padding: 30px 15px 60px;
+  @include respond-to(tablet) {
+    padding: 116px 15px 89px;
+  }
+  @include respond-to(desktop) {
+    padding: 155px 15px 147px;
+  }
+}
+
+.title {
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+  text-align: center;
+
+  @include respond-to(mobile) {
+    font-size: 34px;
+    line-height: 37px;
+  }
+
+  @include respond-to(tablet) {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  @include respond-to(desktop) {
+    font-size: 80px;
+    line-height: 90px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  &Accent {
+    color: $portage;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}

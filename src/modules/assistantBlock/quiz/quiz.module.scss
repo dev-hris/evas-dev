@@ -1,0 +1,62 @@
+@import "../../../theme/index";
+
+.quiz {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    position: relative;
+    padding: 20px 13px 93px;
+    @include respond-to(desktop) {
+        width: 651px;
+        height: 551px;
+    }
+
+    .question {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 18px;
+        color: $black;
+        text-align: center;
+        @include respond-to(desktop){
+            line-height: 29px;
+            margin-bottom: 42px;
+            text-align: start;
+        }
+    }
+
+    .optionsBlock {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 0px;
+        @include respond-to(desktop) {
+            width: 650px;
+            height: 370px;
+            gap: 20px 10px;
+        }
+    }
+
+    .navigation {
+        position: absolute;
+        bottom: 28px;
+        right: 0px;
+        left: 0px;
+        @include respond-to(desktop) {
+            bottom: 0px;
+        }
+
+        .submitButton {
+            width: 135px;
+            height: 40px;
+            border-radius: 20px;
+            margin: 0px auto;
+            @include respond-to(desktop) {
+                width: 172px;
+                height: 60px;
+                margin: 0px 0px 0px auto;
+            }
+        }
+    }
+}

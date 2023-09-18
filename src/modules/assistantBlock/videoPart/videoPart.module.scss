@@ -1,0 +1,79 @@
+@import "../../../theme/index";
+
+.videoPart {
+    width: 100%;
+    height: 100%;
+    background-color: $studio;
+    position: relative;
+    border-radius: 40px 40px 0px 0px;
+
+    @include respond-to(desktop) {
+        border-radius: 40px 0px 0px 40px;
+    }
+
+    .video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 40px 40px 0px 0px;
+
+        @include respond-to(desktop) {
+            border-radius: 40px 0px 0px 40px;
+        }
+    }
+
+    .hint {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        bottom: 12px;
+
+        @include respond-to(desktop) {
+            left: 20px;
+        }
+    }
+
+    .text {
+        margin: 0px auto;
+        width: 305px;
+        height: 83px;
+        border-radius: 20px;
+        padding: 15px 18px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) -41.07%, rgba(0, 0, 0, 0) 106.07%),
+            linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+
+        @include respond-to(desktop) {
+            margin: 0px;
+            bottom: 20px;
+            width: 294px;
+            height: 110px;
+        }
+
+        .name {
+            color: $white;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 20px;
+
+            @include respond-to(desktop) {
+                font-size: 36px;
+                line-height: 50px;
+            }
+        }
+
+        .speech {
+            color: #FFFFFFCC;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+
+            @include respond-to(desktop) {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 20px;
+            }
+        }
+    }
+}

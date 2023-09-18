@@ -1,0 +1,52 @@
+@import '../../../theme/index';
+
+.container {
+  position: relative;
+  width: 100%;
+  background-color: $white30;
+  margin-left: 7px;
+  height: 3px;
+  border-radius: 5px;
+
+  .activeProgress {
+    position: absolute;
+    background-color: $white;
+    height: 3px;
+    border-radius: 5px;
+    bottom: 0px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    display: none;
+    &.show {
+      width: 100%;
+      display: block;
+    }
+    &.showAnimation {
+      width: 100%;
+      display: block;
+      animation: show-progress 5s ease-in-out;
+    }
+  }
+}
+
+.container:first-child {
+  margin-left: 0;
+}
+
+@keyframes show-progress {
+  0% {
+      display: none;
+      width: 0%;
+  }
+
+  1% {
+      display: block;
+      width: 0%;
+  }
+
+  100% {
+      display: block;
+      width: 100%;
+  }
+}

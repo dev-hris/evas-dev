@@ -1,0 +1,73 @@
+@import '../../theme/index';
+
+.wrapper {
+    width: 100%;
+    background-color: $white;
+    height: 255px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: calc(100% - 255px);
+
+    @include respond-to(tablet) {
+        top: calc(100% - 286px);
+        position: sticky;
+        height: 286px;
+    }
+}
+
+.storiesBlock {
+    margin: 45px 0px 63px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        color: $woodsmoke;
+        margin-bottom: 27px;
+        text-align: center;
+    }
+
+    .storiesIcon {
+        width: 330px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @include respond-to(tablet) {
+            width: 520px;
+        }
+    }
+
+    .storyTitle {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        margin-top: 16px;
+        color: $woodsmoke;
+
+        @include respond-to(tablet) {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+
+    .image {
+        border: 2px solid $violet;
+        border-radius: 50%;
+        padding: 2px;
+        width: 42px;
+        height: 42px;
+        object-fit: cover;
+
+        @include respond-to(tablet) {
+            width: 72px;
+            height: 72px;
+        }
+    }
+}

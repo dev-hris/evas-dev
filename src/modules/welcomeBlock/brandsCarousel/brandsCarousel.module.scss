@@ -1,0 +1,48 @@
+@import '../../../theme/index';
+
+.carousel {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  color: $white;
+  height: 100%;
+  width: 350px;
+  display: none;
+  @include respond-to(tablet) {
+    display: block;
+  }
+  @include respond-to(desktop) {
+    right: 70px;
+  }
+}
+
+.carouselMobile {
+  position: absolute;
+  bottom: 0px;
+  color: $white;
+  display: block;
+  height: 80px;
+  width:100%;
+  @include respond-to(tablet) {
+    display: none;
+  }
+}
+
+.slide {
+  border-left: 1px solid $white50;
+  // backdrop-filter: blur(10px);
+  // -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include respond-to(tablet) {
+    border-left: 0px;
+    border-top: 1px solid;
+    border-image-source: radial-gradient(50% 6125000.09% at 50% 50.02%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    border-image-slice: 1;
+  }
+}
+
+.brandsImage {
+  width: auto;
+}

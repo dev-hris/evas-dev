@@ -1,0 +1,38 @@
+@import '../../../../theme/index';
+
+.imgContainer {
+  width: 100%;
+  cursor: pointer;
+}
+
+.wrapperImg {
+  position: absolute;
+  width: 100%;
+  max-width: 270px;
+  z-index: 10;
+
+  @include respond-to(tablet) {
+    max-width: 170px;
+  }
+
+  @include respond-to(desktop) {
+    max-width: 215px;
+  }
+
+  @include respond-to(largeDesktop) {
+    max-width: 270px;
+  }
+}
+
+.popoverLeft {
+  transform: rotate(7deg);
+}
+
+.popoverRight {
+  transform: rotate(-7deg);
+}
+
+.active {
+  position: relative;
+  z-index: 100;
+}

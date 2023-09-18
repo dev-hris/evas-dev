@@ -1,0 +1,155 @@
+@import '../../theme/index';
+
+.container {
+  margin-top: 32px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 15px;
+  box-sizing: border-box;
+
+  @include respond-to(desktop) {
+    margin-top: 80px;
+    width: 1400px;
+    padding: 0px;
+  }
+
+  .linkMobile {
+    display: flex;
+    margin-top: 70px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: $eminence;
+    text-decoration: none;
+    align-items: center;
+    margin-bottom: 20px;
+
+
+    .arrow {
+      margin-left: 8px;
+      width: 23px;
+      height: 14px;
+      display: flex;
+      justify-content: center;
+
+      >svg {
+        width: 100%;
+        height: 100%;
+      }
+
+      >svg>path {
+        fill: $eminence;
+      }
+    }
+
+    @include respond-to(desktop) {
+      display: none;
+    }
+  }
+
+  .line {
+    width: 100%;
+    border: 1px solid $snuff;
+    margin-bottom: 25px;
+
+    @include respond-to(desktop) {
+      margin-bottom: 80px;
+    }
+  }
+
+  .shampooWrapper {
+    width: 100%;
+    margin-top: 47px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 10px;
+
+    @include respond-to(tablet) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 4px;
+      height: 390px;
+    }
+
+    @include respond-to(desktop) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .title {
+    width: 100%;
+
+    .textInteresting {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      color: $studio;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+
+      @include respond-to(desktop) {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 30px;
+        justify-content: flex-start;
+      }
+    }
+
+    .titleWrapper {
+      display: flex;
+      margin-top: 12px;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+
+      @include respond-to(desktop) {
+        justify-content: space-between;
+      }
+
+      .textTitle {
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 37px;
+        color: $black;
+
+        @include respond-to(desktop) {
+          font-size: 80px;
+          line-height: 90px;
+        }
+      }
+
+      .linkTitle {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: $eminence;
+        text-decoration: none;
+        display: none;
+        align-items: center;
+
+        @include respond-to(desktop) {
+          display: flex;
+        }
+
+        .arrow {
+          margin-left: 8px;
+          width: 23px;
+          height: 14px;
+          display: flex;
+          justify-content: center;
+
+          >svg {
+            width: 100%;
+            height: 100%;
+          }
+
+          >svg>path {
+            fill: $eminence;
+          }
+        }
+      }
+    }
+  }
+}

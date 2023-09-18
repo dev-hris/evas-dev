@@ -1,0 +1,85 @@
+@import '../../../../theme/index';
+
+.textBlock {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $balticSea;
+}
+
+.container {
+  background-color: $white50;
+  padding: 19px 33px 18px 26px;
+  box-sizing: border-box;
+  border-radius: 20px;
+
+  .title {
+    display: none;
+
+    .textTitle {
+      @extend .textBlock;
+      font-weight: 600;
+      color: $butterflyBush
+    }
+
+    .btnClose {
+      width: 22px;
+      height: 22px;
+      transform: rotate(180deg);
+    }
+
+    &.active {
+      display: flex;
+      width: 100%;
+      margin-bottom: 10px;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .fullDescription {
+    display: none;
+    @extend .textBlock;
+
+    &.active {
+      display: block;
+    }
+
+    .volume {
+      .titleVolume {
+        @extend .textBlock;
+      }
+      .valueVolume {
+        @extend .textBlock;
+        font-size: 22px;
+        line-height: 24px;
+      }
+    }
+
+    .line {
+      height: 0px;
+      border: 1px solid $black;
+      opacity: 0.05;
+      margin: 12px 0px 12px 0px;
+    }
+    > p {
+      @extend .textBlock;
+    }
+  }
+
+  .shortDescription {
+    @extend .textBlock;
+  }
+
+  .btnDescription {
+    margin-top: 4px;
+    width: 152px;
+    height: 33px;
+    opacity: 1;
+    @extend .textBlock;
+
+    &.active {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+@import "../../theme/index";
+
+.assistantBlock {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 100vw;
+    padding: 25px 15px 62px;
+    background-color: $whiteLilac;
+    display: flex;
+    justify-content: center;
+    @include respond-to(desktop) {
+        height: 1176px;
+        min-height: 1176px;
+        padding: 95px 0px 100px;
+    }
+
+    .wrapper {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include respond-to(desktop) {
+            width: 1400px;
+            align-items: flex-start;
+        }
+    }
+
+    .subTitle {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0em;
+        color: $studio;
+        text-align: center;
+        @include respond-to(desktop) {
+            text-align: left;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 30px;
+            margin-bottom: 12px;
+            letter-spacing: 0.02em;
+        }
+    }
+
+    .title {
+        font-size: 34px;
+        font-weight: 400;
+        line-height: 37px;
+        letter-spacing: 0em;
+        color: $black;
+        width: 345px;
+        text-align: center;
+        @include respond-to(desktop) {
+            text-align: left;
+            width: 770px;
+            font-size: 80px;
+            line-height: 90px;
+            letter-spacing: -0.01em;
+        }
+    }
+
+    .block {
+        width: 100%;
+        height: auto;
+        background-color: $white;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 25px;
+        border-radius: 40px;
+        @include respond-to(desktop) {
+            height: 730px;
+            grid-template-columns: 654px 1fr;
+            margin-top: 27px;
+        }
+    }
+
+    .video {
+        width: 100%;
+        height: 398px;
+        @include respond-to(desktop) {
+            height: 100%;
+            width: 654px;
+        }
+    }
+
+    .quiz {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+

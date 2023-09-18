@@ -1,0 +1,42 @@
+@import "../theme/index";
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 2000px;
+  margin: 0 auto;
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.mainBrand {
+  @extend .main;
+  @include respond-to(mobile) {
+    margin-top: -70px;
+  }
+
+  @include respond-to(tablet) {
+    margin-top: -80px;
+  }
+
+  @include respond-to(desktop) {
+    margin-top: -70px;
+  }
+
+  @include respond-to(largeDesktop) {
+    margin-top: -80px;
+  }
+}

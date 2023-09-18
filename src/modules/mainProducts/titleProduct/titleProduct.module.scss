@@ -1,0 +1,122 @@
+@import "../../../theme/index";
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  cursor: none;
+  &.active {
+    display: none;
+  }
+
+  @include respond-to(mobile) {
+    z-index: 0;
+    margin-top: 40px;
+  }
+
+  @include respond-to(tablet) {
+    z-index: 1;
+    margin-top: 31px;
+  }
+
+  @include respond-to(desktop) {
+    margin-top: 30px;
+  }
+
+  @include respond-to(largeDesktop) {
+    margin-top: 20px;
+  }
+}
+
+.cursorContainer {
+  display: none;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  z-index: 10;
+  pointer-events: none;
+
+  .arrowToDown {
+    width: 16px;
+    height: 24px;
+  }
+}
+
+.infoContainer {
+
+  @include respond-to(mobile) {
+    width: 345px;
+    height: 141px;
+  }
+
+  @include respond-to(tablet) {
+    width: 430px;
+    height: 200px;
+  }
+
+  @include respond-to(largeDesktop) {
+    width: 500px;
+    height: 238px;
+  }
+}
+
+.logoWrapper {
+
+  svg {
+    width: 100%;
+    height: inherit;
+  }
+
+  @include respond-to(mobile) {
+    width: 180px;
+    height: 56px;
+    margin: 0px auto 20px auto;
+  }
+
+  @include respond-to(tablet) {
+    width: 220px;
+    height: 69px;
+    margin: 20px 102px 20px 108px;
+  }
+
+  @include respond-to(largeDesktop) {
+    width: 270px;
+    height: 84px;
+    margin: 30px 115px 30px 115px;
+  }
+}
+
+
+.textWrapper {
+  opacity: 0.6;
+  text-align: center;
+  font-weight: 400;
+
+  @include respond-to(mobile) {
+    width: 345px;
+    height: 65px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @include respond-to(tablet) {
+    width: 436px;
+    height: 66px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @include respond-to(tablet) {
+    width: 436px;
+    height: 66;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @include respond-to(largeDesktop) {
+    width: 500px;
+    height: 72;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

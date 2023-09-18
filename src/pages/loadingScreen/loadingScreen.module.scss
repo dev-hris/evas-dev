@@ -1,0 +1,55 @@
+@import '../../theme/index.scss';
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  animation: showWithOpacity 0.5s ease-in-out;
+
+  .backgroundImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .logoWithTextWrapper {
+    position: absolute;
+    width: 222px;
+    height: 212px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .logoWrapper {
+      width: 100%;
+
+      > svg > g > rect {
+        animation: progress-logo 3s linear;
+      }
+    }
+
+    .textLogoWrapper {
+      width: 100%;
+      opacity: 0;
+      animation: showWithOpacity 1s ease-in-out forwards;
+      animation-delay: 3s;
+    }
+
+  }
+}
+
+@keyframes progress-logo {
+  0% {
+    y: 100%;
+  }
+  100% {
+    y: 0%;
+  }
+}

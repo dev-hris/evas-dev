@@ -1,0 +1,52 @@
+@import "../../../../theme/index";
+
+.block {
+  height: 6px;
+  width: 60px;
+  position: absolute;
+  display: inline-flex;
+  right: 10px;
+  top: 38px;
+
+  .round {
+    clip-path: path("M0 6C3.31371 6 6 3.31371 6 0V6H0Z");
+    background: $white;
+    height: 6px;
+    width: 6px;
+  }
+
+  .padding {
+    background: $white;
+    width: 54px;
+    height: 6px;
+  }
+}
+
+.additionalMenu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 10px;
+  top: 43px;
+  background: $white;
+  width: 189px;
+  border-radius: 8px 0px 8px 8px;
+  padding: 7px 20px;
+  z-index: 200;
+
+  .item {
+    padding: 10px 0px;
+    width: 100%;
+    border-bottom: 1px solid $mineShaft25;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $balticSea;
+
+    &:last-child {
+      border-bottom: 0px;
+    }
+  }
+}

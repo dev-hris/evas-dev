@@ -1,0 +1,56 @@
+@import '../../theme/index';
+
+.container {
+  width: 100%;
+  background-color: $whiteLilac;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .line {
+    max-width: 1400px;
+    width: 100%;
+    border: 1px solid $snuff;
+  }
+
+  .headingWrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    .welcomeBlockWrapper {
+      position: relative;
+      z-index: 1;
+    }
+
+    .storiesBlockWrapper {
+      width: 100%;
+      position: absolute;
+      top: 0px;
+      height: calc(100% + 255px);
+
+      @include respond-to(tablet) {
+        height: calc(100% + 286px);
+      }
+    }
+  }
+
+
+  .otherContentWrapper {
+    width: 100%;
+    margin-top: 255px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include respond-to(tablet) {
+      margin-top: 286px;
+    }
+  }
+
+  .line {
+    max-width: 1400px;
+    width: 100%;
+    border: 1px solid $snuff;
+  }
+}

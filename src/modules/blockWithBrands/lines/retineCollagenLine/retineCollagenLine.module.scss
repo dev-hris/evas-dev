@@ -1,0 +1,157 @@
+@import "../../../../theme/index";
+
+.container {
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background: url('../../../../assets/images/fraijourMain/productLine/retineCollagenLine.jpg') no-repeat;
+  background-size: 365px 264px;
+  animation: show-block 0.5s ease-in-out;
+
+  @keyframes show-block {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+  }
+
+  @include respond-to(tablet) {
+    background-size: 719px 555px;
+  }
+
+  @include respond-to(desktop) {
+    background-size: 875px 675px;
+  }
+
+  @include respond-to(largeDesktop) {
+    background-size: 1140px 875px;
+  }
+
+  .popoverButton {
+    display: none;
+    @include respond-to(tablet){
+      display: block;
+    }
+  }
+
+  .poiner {
+    display: block;
+    @include respond-to(tablet) {
+      display: none;
+    }
+  }
+
+  .firstPopover {
+    margin-left: 42px;
+    margin-top: 114px;
+
+    @include respond-to(tablet) {
+      margin-left: 96px;
+      margin-top: 248px;
+    }
+
+    @include respond-to(desktop) {
+      margin-left: 119px;
+      margin-top: 340px;
+    }
+
+    @include respond-to(largeDesktop) {
+      margin-left: 157px;
+      margin-top: 391px;
+    }
+  }
+
+  .secondPopover {
+    margin-left: 69px;
+    margin-top: 77px;
+
+    .popover {
+      @include respond-to(desktop) {
+        bottom: -40px;
+      }
+
+      @include respond-to(largeDesktop) {
+        bottom: 22px;
+      }
+    }
+
+    @include respond-to(tablet) {
+      margin-left: 91px;
+      margin-top: 178px;
+    }
+
+    @include respond-to(desktop) {
+      margin-left: 90px;
+      margin-top: 215px;
+    }
+
+    @include respond-to(largeDesktop) {
+      margin-left: 139px;
+      margin-top: 261px;
+    }
+  }
+
+  .thirdPopover {
+    margin-left: 67px;
+    margin-top: 97px;
+
+    @include respond-to(tablet) {
+      margin-left: 88px;
+      margin-top: 208px;
+    }
+
+    @include respond-to(desktop) {
+      margin-left: 100px;
+      margin-top: 290px;
+    }
+
+    @include respond-to(largeDesktop) {
+      margin-left: 151px;
+      margin-top: 338px;
+    }
+  }
+
+  .fourthPopover {
+    margin-left: 60px;
+    margin-top: 137px;
+
+    @include respond-to(tablet) {
+      margin-left: 86px;
+      margin-top: 303px; 
+    }
+
+    @include respond-to(desktop) {
+      margin-left: 93px;
+      margin-top: 340px;
+    }
+
+    @include respond-to(largeDesktop) {
+      margin-left: 135px;
+      margin-top: 475px;
+    }
+  }
+
+  .fifthPopover {
+    margin-left: 62px;
+    margin-top: 109px;
+
+    @include respond-to(tablet) {
+      margin-left: 81px;
+      margin-top: 221px;
+    }
+
+    @include respond-to(desktop) {
+      margin-left: 92px;
+      margin-top: 258px;
+    }
+
+    @include respond-to(largeDesktop) {
+      margin-left: 133px;
+      margin-top: 350px;
+    }
+  }
+}

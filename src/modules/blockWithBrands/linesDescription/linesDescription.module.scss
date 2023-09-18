@@ -1,0 +1,174 @@
+@import '../../../theme/index';
+
+.description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+    border-bottom: 1px solid $mineShaft25;
+    display: none;
+
+    @include respond-to(desktop) {
+        display: block;
+        padding-bottom: 18px;
+        margin-bottom: 14px;
+    }
+}
+
+.descriptionTablet {
+    display: block;
+    margin-bottom: 22px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+    border-bottom: 1px solid $mineShaft25;
+
+    @include respond-to(desktop) {
+        display: none;
+    }
+
+    .titleTablet {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $mineShaft50;
+        padding-bottom: 14px;
+    }
+
+    .titleTabletActive {
+        color: $mineShaft;
+    }
+
+    .textTablet {
+        display: block;
+        overflow: hidden;
+        animation: open 0.5s ease-in-out;
+        animation-fill-mode: forwards;
+        padding-top: 14px;
+        padding-bottom: 16px;
+        color: $mineShaft50;
+
+        @keyframes open {
+            0% {
+                height: 0px
+            }
+
+            1% {
+                border-top: 1px solid $mineShaft25;
+                height: 1px;
+            }
+
+            100% {
+                border-top: 1px solid $mineShaft25;
+                height: 100px;
+            }
+        }
+    }
+
+    .hide {
+        display: none;
+        padding-top: 14px;
+        padding-bottom: 16px;
+        border-top: 1px solid $mineShaft25;
+        animation: close 0.4s ease-in-out;
+        animation-fill-mode: forwards;
+        overflow: hidden;
+        color: $mineShaft50;
+
+        @keyframes close {
+            0% {
+                height: 100px;
+                display: block;
+            }
+
+            99% {
+                height: 0px;
+                padding: 0px;
+                display: block;
+            }
+
+            100% {
+                height: 0px;
+                padding: 0px;
+                display: none;
+            }
+        }
+    }
+}
+
+.openButton {
+    width: 22px;
+    height: 22px;
+    border: none;
+    border-radius: 11px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $athensGray;
+
+    // core 
+    &Portage:hover {
+        background: $portage;
+    }
+
+    // WormMood
+    &AquaForest:hover {
+        background: $aquaForest;
+    }
+
+    //HeartLeaf
+    &GreenSmoke:hover {
+        background: $greenSmoke;
+    }
+
+    // pro M
+    &Indigo:hover {
+        background: $lightPortage;
+    }
+
+    // boime
+    &NewYorkPink:hover {
+        background: $newYorkPink;
+    }
+
+    // honey 
+    &Ronchi:hover {
+        background: $ronchi;
+    }
+
+}
+
+.openButtonActive {
+
+    // core 
+    &Portage {
+        background: $portage;
+    }
+
+    // WormMood
+    &AquaForest {
+        background: $aquaForest;
+    }
+
+    //HeartLeaf
+    &GreenSmoke {
+        background: $greenSmoke;
+    }
+
+    // pro M
+    &Indigo {
+        background: $lightPortage;
+    }
+
+    // boime
+    &NewYorkPink {
+        background: $newYorkPink;
+    }
+
+    // honey 
+    &Ronchi {
+        background: $ronchi;
+    }
+}

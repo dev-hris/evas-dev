@@ -1,0 +1,98 @@
+@import '../../theme/index';
+
+.productsPart {
+    display: block;
+    height: auto;
+    width: 100%;
+    background-color: $white;
+
+    .wrapper {
+        max-width: 1400px;
+        margin: 0px auto;
+    }
+
+    .subtitle {
+        color: $studio;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 0.02em;
+        margin-top: 22px;
+        @include respond-to(desktop) {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 30px;
+            text-align: left;
+            margin: 89px 0px 12px;
+        }      
+    }
+
+    .title {
+        color: $black;
+        font-size: 34px;
+        font-weight: 400;
+        letter-spacing: -0.01em;
+        line-height: 37px;
+        @include respond-to(desktop) {
+            font-size: 80px;
+            line-height: 90px;
+        }
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-around;
+        @include respond-to(desktop) {
+            justify-content: space-between;
+        }
+    }
+
+    .pagination {
+        background: rgba(97, 85, 116, 0.3);
+        border-radius: 30px;
+        height: 50px;
+    }
+
+    .paginationTablet {
+        display: none;
+        @include respond-to(desktop) {
+            display: flex;
+        }
+    }
+
+    .paginationMobile {
+        width: fit-content;
+        margin: auto auto 99px;
+        display: flex;
+        @include respond-to(desktop) {
+            display: none;
+        }
+    }
+
+    .paginationArrow {
+        margin: 5px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .paginationArrowRight {
+        @extend .paginationArrow;
+        transform: rotate(180deg);
+    }
+
+    .paginationDotsActive {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $black;
+    }
+
+    .paginationDots{
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: $white;
+    }
+}

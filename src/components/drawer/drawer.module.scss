@@ -1,0 +1,34 @@
+@import '../../theme/index';
+
+.container {
+  position: absolute;
+  padding: 0px 15px 79px 15px;
+  box-sizing: border-box;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: initial;
+  background-color: $white30;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  -o-backdrop-filter: blur(10px);
+  -ms-backdrop-filter: blur(10px);
+  border-radius: 20px 20px 0px 0px;
+
+  .toucher {
+    width: 100%;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+
+    .ellipseToucher {
+      background-color: $mineShaft;
+      opacity: 0.17;
+      width: 40px;
+      height: 3px;
+      margin-top: 5px;
+      border-radius: 5px;
+    }
+  }
+}

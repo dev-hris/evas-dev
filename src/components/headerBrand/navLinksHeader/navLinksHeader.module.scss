@@ -1,0 +1,148 @@
+@import "../../../theme/index";
+
+.container {
+  display: inline-flex;
+  height: 50px;
+  width: 1077px;
+
+  @include respond-to(mobile) {
+    display: none;
+  }
+
+  @include respond-to(desktop) {
+    display: inline-flex;
+  }
+}
+
+.containerDevice {
+  display: none;
+  height: 50px;
+  width: 810px;
+  @include respond-to(tablet) {
+    display: inline-flex;
+    width: 100%;
+  }
+  @include respond-to(desktop) {
+    display: none;
+  }
+}
+
+.buttonGroupDevice {
+  height: 100%;
+  display: inline-flex;
+}
+
+.button {
+  font-weight: 700;
+  line-height: 16px;
+  color: $balticSea;
+  border: none;
+  background-color: rgba(255,255,255, 0.30);
+  display: inline-flex;
+  align-items: center;
+
+  &:active {
+    color: $mediumPurple;
+    background: radial-gradient(ellipse at bottom, rgba(255,255,255, 0.8), transparent);
+  }
+
+  &:hover:not(:disabled) {
+    color: $mediumPurple;
+  }
+
+  @include respond-to(tablet) {
+    font-size: 10px;
+  }
+  @include respond-to(desktop) {
+    font-size: 12px;
+  }
+}
+
+.buttonActive {
+  color: $mediumPurple;
+  background: radial-gradient(ellipse at bottom, rgba(255,255,255, 0.8), transparent);
+}
+
+.line {
+  margin-left: 18px;
+  width: 1px;
+  height: 20px;
+  opacity: 0.2;
+  background-color: $balticSea;
+}
+
+.link {
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0px;
+  padding: 18px 0px 18px 18px;
+
+  &:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  &:last-child {
+    @include respond-to(tablet) {
+      font-size: 11px;
+    }
+    @include respond-to(desktop) {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      padding: 18px;
+    }
+  }
+
+  &:last-child .line{
+    display: none;
+  }
+}
+
+.cellAdditionalMenu {
+  position: relative;
+  width: 54px;
+  background-color: rgba(255,255,255, 0.30);
+  padding: 9px 10px 11px 17px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.buttonAdditionalMenu {
+  width: 54px;
+  height: 30px;
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+
+  .text {
+    font-weight: 700;
+    color: $balticSea;
+    line-height: 16px;
+    font-size: 11px;
+  }
+
+  .tick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    width: 5px;
+    transform: rotate(0deg);
+    transition: 0.5s;
+    >svg>path {
+      width: 100%;
+      stroke: #696774;
+    }
+
+    &.active {
+      transform: rotate(-180deg);
+      transition: 0.5s;
+    }
+  }
+}
+
+.openButton {
+  border-radius: 8px 8px 0px 0px;
+}

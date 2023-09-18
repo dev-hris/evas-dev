@@ -1,0 +1,39 @@
+@import "../../theme/index";
+
+.buttonPopover {
+  display: inline-flex;
+
+  .button {
+    position: relative;
+    z-index: 900;
+  }
+}
+
+.wrapper {
+  position: relative;
+  margin-left: -5px;
+  margin-top: -20px;
+  height: 35px;
+  width: 35px;
+
+  .line {
+    height: 100%;
+    width: 100%;
+  }
+
+  .popover {
+    position: absolute;
+    margin-left: 22px;
+    bottom: 22px;
+    &__content {
+      background-color: $white;
+      border-radius: 30px;
+    }
+  }
+}
+
+.popoverContainer {
+  position: absolute;
+  margin-left: 54px;
+  z-index: 1000;
+}

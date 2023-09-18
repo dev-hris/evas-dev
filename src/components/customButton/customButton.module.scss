@@ -1,0 +1,204 @@
+@import '../../theme/index';
+
+.container {
+  border-radius: 30px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $balticSea;
+  cursor: pointer;
+  >svg>path {
+    fill: $balticSea;
+  }
+  &:hover:not(:disabled) {
+    transition: background-color 0.3s;
+  }
+
+  &.evasBtnPrimary {
+    background-color: $portage;
+    color: $white;
+    >svg>path {
+      fill: $white;
+    }
+    
+    &:hover {
+      background-color: $butterflyBush;
+    }
+  }
+
+  &.evasBtnLight {
+    background-color: transparent;
+    border: 1px solid $alto;
+
+    &:hover:not(:disabled) {
+      background-color: $black04;
+    }
+
+    &:disabled {
+      >svg>path {
+        fill: $alto;
+      }
+    }
+  }
+
+  &.evasBtnWhiteWisteria {
+    background-color: $white;
+    border: 1px solid $wisteria;
+    color: $wisteria;
+    >svg>path {
+      fill: $wisteria;
+    }
+    &:hover:not(:disabled) {
+    color: $white;
+    background-color: $wisteria;
+      >svg>path {
+        fill: $white;
+      }
+    }
+  }
+
+  &.evasBtnOutLine {
+    background-color: $white;
+    opacity: 0.4;
+    color: $balticSea;
+    >svg>path {
+      fill: $balticSea;
+    }
+  }
+
+  &.evasBtnWhite {
+    background-color: $white;
+    &:hover:not(:disabled) {
+      background-color: $whiteLilac;
+    }
+  }
+
+  &.evasBtnBlack {
+    background-color: $black30;
+    font-weight: 500;
+    color: $white;
+
+    &:hover {
+      background-color: rgba(4, 4, 4, 0.5);
+    }
+  }
+
+  // core
+  &.evasBtnPortage {
+    border: 1px solid $portage;
+    background-color: transparent;
+    
+    &:hover {
+      background-color: $butterflyBush;
+    }
+  }
+
+  // WormMood
+  &.evasBtnAquaForest {
+    border: 1px solid $aquaForest;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $aquaForestHover;
+    }
+  }
+
+  //HeartLeaf
+  &.evasBtnGreenSmoke {
+    border: 1px solid $greenSmoke;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $greenSmokeHover;
+    }
+  }
+
+  //pro M
+  &.evasBtnIndigo {
+    border: 1px solid $lightPortage;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $portageHover;
+    }
+  }
+
+  //boime
+  &.evasBtnNewYorkPink {
+    border: 1px solid $newYorkPink;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $newYorkPinkHover;
+    }
+  }
+
+  // honey 
+  &.evasBtnRonchi {
+    border: 1px solid $ronchi;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $ronchiHover;
+    }
+  }
+
+  &.evasBtnWhiteWisteria {
+    background-color: $white;
+    border: 1px solid $wisteria;
+    color: $wisteria;
+    >svg>path {
+      fill: $wisteria;
+    }
+    &:hover {
+    color: $white;
+    background-color: $wisteria;
+      >svg>path {
+        fill: $white;
+      }
+    }
+  }
+
+  &.evasBtnWhiteDolphin {
+    background: $white;
+    border: 1px solid $white;
+
+    >svg>path {
+      width: 100%;
+      stroke: $dolphin;
+    }
+
+    &:hover:not(:disabled) {
+      transition: background 0.3s;
+      background: $dolphin;
+      border: 1px solid $dolphin;
+
+      >svg>path {
+        width: 100%;
+        stroke: $white;
+      }
+    }
+  }
+
+  &.evasBtnWhiteLilac {
+    border: 1px solid $whisper;
+    background: transparent;
+    &:hover:not(:disabled) {
+      border: 1px solid $purpleHeart;
+    }
+  }
+
+  &.evasBtnBlueGem {
+    border: 1px solid $blueGem;
+    background: transparent;
+    color: $blueGem;
+    &:hover:not(:disabled) {
+      background: $blueGem;
+      color: $white;
+    }
+    &:disabled {
+      opacity: 0.3;
+    }
+  }
+}
