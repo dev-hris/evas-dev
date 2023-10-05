@@ -1,5 +1,5 @@
-const  retinCollagen3dCodeLine = [
-  'сleansingFoam',
+const  retinCollagen3dCoreLine = [
+  'cleansingFoam',
   'toner',
   'eyeCream',
   'cream',
@@ -49,10 +49,10 @@ const  heartLeafLine = [
 ];
 
 export const lines = new Map([
-  ['heartLeaf', heartLeafLine],
-  ['originalHerbWormwood', originalHerbWormwoodLine],
-  ['yuzuHoney', yuzuHoneyLine],
-  ['retinCollagen3dCode', retinCollagen3dCodeLine],
-  ['proMoisture', proMoistureLine],
-  ['biome5lacto', biome5lactoLine],
+  ['heartLeafLine', heartLeafLine],
+  ['originalHerbWormwoodLine', originalHerbWormwoodLine],
+  ['yuzuHoneyLine', yuzuHoneyLine],
+  ['retinCollagen3dCoreLine', retinCollagen3dCoreLine],
+  ['proMoistureLine', proMoistureLine],
+  ['biome5lactoLine', biome5lactoLine],
 ]);

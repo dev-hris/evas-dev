@@ -3,7 +3,6 @@ import cn from 'classnames';
 
 import {useInView} from 'react-intersection-observer';
 import {useNavigate} from 'react-router-dom';
-import {Parallax} from 'react-scroll-parallax';
 
 import {RoundButton} from '../../components/roundButton/RoundButton';
 import {ButtonVariant} from '../../utils/constants/buttonVariantEnum';
@@ -15,53 +14,36 @@ import {CustomButton} from '../../components/customButton/CustomButton';
 
 import {PATH} from '../../utils/constants/routeConstants';
 
+import {splitStringByBr} from '../../utils/helpers/splitString';
+
 import styles from './promo.module.scss';
 
 type Props = {
-    title: string;
-    image: any;
-    description: string;
-    firstPill: string;
-    secondPill: string;
-    thirdPill: string;
+    promo: {
+      image: string;
+      purpose: string;
+      description: string;
+      labels: {text: string}[];
+      title: string;
+    };
     clickOnButton: () => void
 }
 
 export const Promo: React.FunctionComponent<Props> = ({
-  title,
-  image,
-  description,
-  firstPill,
-  secondPill,
-  thirdPill,
+  promo,
   clickOnButton,
 }) => {
   const navigate = useNavigate();
 
   const [pills] = useState([
     {
-      className: styles.pill1, title: firstPill,
-      animation: {
-        translateY: [3000, 300] as any,
-        translateX: [600, 200] as any,
-        rotate: [100, -50] as any,
-      },
+      className: styles.pill1, title: promo.labels[0]?.text,
     },
     {
-      className: styles.pill2, title: secondPill,
-      animation: {
-        translateY: [-200, -3000],
-        translateX: [-400, 300],
-        rotate: [0, 150],
-      },
+      className: styles.pill2, title: promo.labels[1]?.text,
     },
     {
-      className: styles.pill3, title: thirdPill,
-      animation: {
-        translateY: [4000, 500] as any,
-        translateX: [400, 100] as any,
-        rotate: [50, -50] as any,
-      },
+      className: styles.pill3, title: promo.labels[2]?.text,
     },
   ]);
   const {ref, inView} = useInView({
@@ -74,9 +56,9 @@ export const Promo: React.FunctionComponent<Props> = ({
 
   return (<div
     className={cn(styles.container, {[styles.containerScrolled]: inView})}
-    style={{backgroundImage: `url('${image}')`}}
+    style={{backgroundImage: `url('${promo.image}')`}}
   >
-    <div className={styles.background} style={{backgroundImage: `url('${image}')`}}/>
+    <div className={styles.background} style={{backgroundImage: `url('${promo.image}')`}}/>
     <div className={styles.content}>
       <div>
         <CustomButton
@@ -88,13 +70,21 @@ export const Promo: React.FunctionComponent<Props> = ({
             <span>назад</span>
           </>
         </CustomButton>
-        <h2 className={styles.subtitle}>Уходовая линейка</h2>
+        <h2 className={styles.subtitle}>{promo.purpose}</h2>
         <div className={styles.titleBlock}>
-          <h1 className={styles.title}>Retine-Collagen <br /> 3D Core</h1>
+          <h1 className={styles.title}>{splitStringByBr(promo.title).map((part, id) =>
+            <div key={id}>
+              {part}
+              <br/>
+            </div>)}</h1>
         </div>
       </div>
       <div>
-        <p className={styles.description}>{description}</p>
+        <div className={styles.description}>{splitStringByBr(promo.description).map((part, id) =>
+          <div key={id}>
+            {part}
+            <br/>
+          </div>)}</div>
       </div>
       <div className={styles.buttonDownBlock}>
         <RoundButton
@@ -105,17 +95,13 @@ export const Promo: React.FunctionComponent<Props> = ({
         </RoundButton>
       </div>
     </div>
-    <div className={styles.pills}>
-      {pills.map(({className, title, animation}) => (
-        <Parallax
-          key={title}
-          translateX={animation.translateX}
-          translateY={animation.translateY}
-          rotateZ={animation.rotate}
-          className={className}
-        >
-          <CustomLabel title={title} />
-        </Parallax>
+    <div className={cn(styles.pills, {[styles.active]: inView})}>
+      {pills.map(({className, title}, id) => (
+        <CustomLabel
+          className={cn(className, {[styles.active]: inView})}
+          title={title}
+          key={id}
+        />
       ))}
     </div>
     <div className={styles.blockCheckScroll} ref={ref} />

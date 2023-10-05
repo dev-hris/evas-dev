@@ -36,8 +36,8 @@ export const bottles: IBottle[] = [
       textColor: ColorVariant.NewYorkPink,
       productLineUrl: productLine1,
     },
-    pathLine: `/${PATH.lines.biome5lacto}`,
-    pathProduct: `/${PATH.lines.biome5lacto}/${PATH.biome5lactoLine.balanceToner}`,
+    pathLine: PATH.lines.biome5lacto,
+    pathProduct: PATH.biome5lactoLine.balanceToner,
     background: {
       url: backgroundBottle1,
       color: '#D97D74',
@@ -51,8 +51,8 @@ export const bottles: IBottle[] = [
       textColor: ColorVariant.Indigo,
       productLineUrl: productLine2,
     },
-    pathLine: `/${PATH.lines.proMoisture}`,
-    pathProduct: `/${PATH.lines.proMoisture}/${PATH.proMoistureLine.enzymePowderWash}`,
+    pathLine: PATH.lines.proMoisture,
+    pathProduct: PATH.proMoistureLine.enzymePowderWash,
     background: {
       url: backgroundBottle2,
       color: '#617EC1',
@@ -66,9 +66,8 @@ export const bottles: IBottle[] = [
       textColor: ColorVariant.AquaForest,
       productLineUrl: productLine3,
     },
-    pathLine: `/${PATH.lines.originalHerbWormwood}`,
-    pathProduct: `/${PATH.lines.originalHerbWormwood}
-      /${PATH.originalHerbWormwoodLine.calmingToner}`,
+    pathLine: PATH.lines.originalHerbWormwood,
+    pathProduct: PATH.originalHerbWormwoodLine.calmingToner,
     background: {
       url: backgroundBottle3,
       color: '#609A6F',
@@ -82,8 +81,8 @@ export const bottles: IBottle[] = [
       textColor: ColorVariant.GreenSmoke,
       productLineUrl: productLine4,
     },
-    pathLine: `/${PATH.lines.heartLeaf}`,
-    pathProduct: `/${PATH.lines.heartLeaf}/${PATH.heartLeafLine.intensiveCalmingEssence}`,
+    pathLine: PATH.lines.heartLeaf,
+    pathProduct: PATH.heartLeafLine.intensiveCalmingEssence,
     background: {
       url: backgroundBottle4,
       color: '#A0B264',
@@ -97,8 +96,8 @@ export const bottles: IBottle[] = [
       textColor: ColorVariant.Portage,
       productLineUrl: productLine5,
     },
-    pathLine: `/${PATH.lines.retinCollagen3dCode}`,
-    pathProduct: `/${PATH.lines.retinCollagen3dCode}/${PATH.retinCollagen3dCodeLine.eyeCream}`,
+    pathLine: PATH.lines.retinCollagen3dCore,
+    pathProduct: PATH.retinCollagen3dCoreLine.eyeCream,
     background: {
       url: backgroundBottle5,
       color: '#9996ef',
@@ -112,8 +111,8 @@ export const bottles: IBottle[] = [
       textColor: ColorVariant.Ronchi,
       productLineUrl: productLine6,
     },
-    pathLine: `/${PATH.lines.yuzuHoney}`,
-    pathProduct: `/${PATH.lines.yuzuHoney}/${PATH.yuzuHoneyLine.lipSleepingMask}`,
+    pathLine: PATH.lines.yuzuHoney,
+    pathProduct: PATH.yuzuHoneyLine.lipSleepingMask,
     background: {
       url: backgroundBottle6,
       color: '#E8BF56',

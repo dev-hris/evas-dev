@@ -1,6 +1,8 @@
 import React from 'react';
 import cn from 'classnames';
 
+import {IProduct} from '../../../redux/interfaces';
+
 import {ButtonRollUp} from './buttonRollUp/ButtonRollUp';
 
 import {DescriptionProduct} from './descriptionProduct/DescriptionProduct';
@@ -13,10 +15,12 @@ export type InfoProductDrawerProps = {
     description: {
         isActiveDescription: boolean;
         handleDescriptionDrawer: (flag: boolean) => void;
+        product: IProduct;
     };
     application: {
         isActiveApplication: boolean;
         handleApplicationDrawer: (flag: boolean) => void;
+        product: IProduct;
     };
   }
   handleClose: () => void;

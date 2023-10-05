@@ -10,8 +10,10 @@ export interface IContentState {
   activeLine: string;
   allProducts: string[];
   activeProduct: string;
-  line: ILine | undefined;
-  product: IProduct | undefined;
+  line: ILine;
+  product: IProduct;
+  isLoading: boolean;
+  error: string | undefined;
 }
 
 export interface IContentActionHandler {
@@ -59,9 +61,25 @@ export interface IPath {
 }
 
 export interface IProduct {
-  id?: any;
+  content: string;
+  volume: string;
+  application: string;
+  description: string;
+  lineName: string;
+  productName: string;
+  image: string;
 }
 
 export interface ILine {
-  id?: any;
+  promo: {
+    image: string;
+    purpose: string;
+    description: string;
+    labels: {text: string}[];
+    title: string;
+  };
+  highlights: {
+    description: string;
+    list: {value: string; definition: string}[];
+  };
 }
