@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/evas-dev/static/css/main.b4ff91ba.css",
-    "main.js": "/evas-dev/static/js/main.d29c15c3.js",
+    "main.css": "/evas-dev/static/css/main.887790d1.css",
+    "main.js": "/evas-dev/static/js/main.aad4a854.js",
     "static/js/787.28cb0dcd.chunk.js": "/evas-dev/static/js/787.28cb0dcd.chunk.js",
     "static/media/test.mp4": "/evas-dev/static/media/test.6fba2d8ae0210c62197f.mp4",
     "static/media/welcomeMobile.gif": "/evas-dev/static/media/welcomeMobile.4c8643aff4d11c4440ff.gif",
@@ -14,7 +14,6 @@
     "static/media/mainBackground.png": "/evas-dev/static/media/mainBackground.fa48d5dc757329fe9f9e.png",
     "static/media/backgroundBottle4.png": "/evas-dev/static/media/backgroundBottle4.dc27e678dbf90210438b.png",
     "static/media/backgroundBottle5.png": "/evas-dev/static/media/backgroundBottle5.e4ad3ca750bdf6361219.png",
-    "static/media/core.jpg": "/evas-dev/static/media/core.b72e0d212d3695ccc1e4.jpg",
     "static/media/retineCollagenLine.jpg": "/evas-dev/static/media/retineCollagenLine.a5f446987077c269a22a.jpg",
     "static/media/heartleafBlemish.jpg": "/evas-dev/static/media/heartleafBlemish.e0c894cfb5f2dd34777b.jpg",
     "static/media/originalHerbWormwoodLine.jpg": "/evas-dev/static/media/originalHerbWormwoodLine.72fd485a17f726b53ed9.jpg",
@@ -30,7 +29,6 @@
     "static/media/mainBackgroundMobile.png": "/evas-dev/static/media/mainBackgroundMobile.1f5d72cb8f681009be3c.png",
     "static/media/bottle4.png": "/evas-dev/static/media/bottle4.01d5bdd7f28bd5eb8f03.png",
     "static/media/bottle2.png": "/evas-dev/static/media/bottle2.098590ab39064ec37449.png",
-    "static/media/product1.png": "/evas-dev/static/media/product1.b3145040acf84e75ace6.png",
     "static/media/bottle3.png": "/evas-dev/static/media/bottle3.81a28c72f6dd9037c0a3.png",
     "static/media/productLine6.png": "/evas-dev/static/media/productLine6.8692163eb0f004cc9744.png",
     "static/media/productLine5.png": "/evas-dev/static/media/productLine5.103f3e017be3216a8c8f.png",
@@ -73,12 +71,12 @@
     "static/media/tickDown.svg": "/evas-dev/static/media/tickDown.76984433efa3350ed6cce643efc8b583.svg",
     "static/media/lineToLeft.svg": "/evas-dev/static/media/lineToLeft.1210106b94d790b6bd485de487047331.svg",
     "static/media/dropdownArrow.svg": "/evas-dev/static/media/dropdownArrow.59b7d0d2e3a095308eff2bc6ab589ecf.svg",
-    "main.b4ff91ba.css.map": "/evas-dev/static/css/main.b4ff91ba.css.map",
-    "main.d29c15c3.js.map": "/evas-dev/static/js/main.d29c15c3.js.map",
+    "main.887790d1.css.map": "/evas-dev/static/css/main.887790d1.css.map",
+    "main.aad4a854.js.map": "/evas-dev/static/js/main.aad4a854.js.map",
     "787.28cb0dcd.chunk.js.map": "/evas-dev/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4ff91ba.css",
-    "static/js/main.d29c15c3.js"
+    "static/css/main.887790d1.css",
+    "static/js/main.aad4a854.js"
   ]
 }
