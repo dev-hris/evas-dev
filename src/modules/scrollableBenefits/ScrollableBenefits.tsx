@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 
+import {splitStringByBr} from '../../utils/helpers/splitString';
+
 import styles from './scrollableBenefits.module.scss';
 
 import {Benefits} from './Benefits/Benefits';
@@ -7,29 +9,13 @@ import {Benefits} from './Benefits/Benefits';
 type Props = {
     title: string;
     description: string;
-    firstBenefitTitle: string;
-    firstBenefit: string;
-    secondBenefitTitle: string;
-    secondBenefit: string;
-    thirdBenefitTitle: string;
-    thirdBenefit: string;
+    benefitsList: {value: string; definition: string}[];
 }
 
 export const ScrollableBenefits: React.FunctionComponent<Props> = ({
   title,
   description,
-  firstBenefitTitle,
-  firstBenefit,
-  secondBenefitTitle,
-  secondBenefit,
-  thirdBenefitTitle,
-  thirdBenefit}) => {
-
-  const [benefits, _] = useState([
-    {id: 0, title: firstBenefitTitle, description: firstBenefit},
-    {id: 1, title: secondBenefitTitle, description: secondBenefit},
-    {id: 2, title: thirdBenefitTitle, description: thirdBenefit},
-  ]);
+  benefitsList}) => {
   const [queueActiveId, setQueueActiveId] = useState<number[]>([0]);
 
   const changeActiveId = (id: number, isView: boolean) => {
@@ -44,16 +30,16 @@ export const ScrollableBenefits: React.FunctionComponent<Props> = ({
   return (<div className={styles.container}>
     <div className={styles.wrapper}>
       <div className={styles.side}>
-        <h1 className={styles.title}>Retine-Collagen <br /> 3D Core</h1>
+        <h1 className={styles.title}>{splitStringByBr(title)}</h1>
         <p className={styles.description}>{description}</p>
       </div>
       <div className={styles.content}>
-        {benefits.map(({title, description, id}) => (
+        {benefitsList.map((benefit, id) => (
           <Benefits
             key={id}
             id={id}
-            title={title}
-            description={description}
+            title={benefit.value}
+            description={benefit.definition}
             activeId={queueActiveId[0]}
             setActiveId={changeActiveId}
           />

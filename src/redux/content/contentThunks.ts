@@ -5,7 +5,7 @@ import {getLineApi, getProductApi} from './api';
 export const getProduct = createAsyncThunk(
   'product',
   async ({lineProduct, product} :
-    {lineProduct: string | undefined, product: string | undefined}, thunkApi) => {
+    {lineProduct: string, product: string}, thunkApi) => {
     try {
       const {data} = await getProductApi(lineProduct, product);
       return data;
@@ -17,7 +17,7 @@ export const getProduct = createAsyncThunk(
 
 export const getLine = createAsyncThunk(
   'line',
-  async (line: string | undefined, thunkApi) => {
+  async (line: string, thunkApi) => {
     try {
       const {data} = await getLineApi(line);
       return data;

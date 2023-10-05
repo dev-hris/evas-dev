@@ -31,8 +31,8 @@ const initialState: IStoriesState = {
       backgroundUrl: background1,
       bottleUrl: bottle1,
       path: {
-        line: `/${PATH.lines.biome5lacto}`,
-        product: `/${PATH.lines.biome5lacto}/${PATH.biome5lactoLine.balanceGelCleanser}`,
+        line: PATH.lines.biome5lacto,
+        product: PATH.biome5lactoLine.balanceGelCleanser,
       },
       index: 0,
       colors: {
@@ -43,8 +43,8 @@ const initialState: IStoriesState = {
     {
       backgroundUrl: background2,
       path: {
-        line: `/${PATH.lines.proMoisture}`,
-        product: `/${PATH.lines.proMoisture}/${PATH.proMoistureLine.moistureSheetMask}`,
+        line: PATH.lines.proMoisture,
+        product: PATH.proMoistureLine.moistureSheetMask,
       },
       bottleUrl: bottle2,
       index: 1,
@@ -56,9 +56,8 @@ const initialState: IStoriesState = {
     {
       backgroundUrl: background3,
       path: {
-        line: `/${PATH.lines.originalHerbWormwood}`,
-        product: `/${PATH.lines.originalHerbWormwood}/
-          ${PATH.originalHerbWormwoodLine.calmingToner}`,
+        line: PATH.lines.originalHerbWormwood,
+        product: PATH.originalHerbWormwoodLine.calmingToner,
       },
       bottleUrl: bottle3,
       index: 2,
@@ -70,8 +69,8 @@ const initialState: IStoriesState = {
     {
       backgroundUrl: background4,
       path: {
-        line: `/${PATH.lines.heartLeaf}`,
-        product: `/${PATH.lines.heartLeaf}/${PATH.heartLeafLine.intensiveCalmingEssence}`,
+        line: PATH.lines.heartLeaf,
+        product: PATH.heartLeafLine.intensiveCalmingEssence,
       },
       bottleUrl: bottle4,
       index: 3,
@@ -83,8 +82,8 @@ const initialState: IStoriesState = {
     {
       backgroundUrl: background5,
       path: {
-        line: `/${PATH.lines.retinCollagen3dCode}`,
-        product: `/${PATH.lines.retinCollagen3dCode}/${PATH.retinCollagen3dCodeLine.ampouleMist}`,
+        line: PATH.lines.retinCollagen3dCore,
+        product: PATH.retinCollagen3dCoreLine.ampouleMist,
       },
       bottleUrl: bottle5,
       index: 4,
@@ -96,8 +95,8 @@ const initialState: IStoriesState = {
     {
       backgroundUrl: background6,
       path: {
-        line: `/${PATH.lines.yuzuHoney}`,
-        product: `/${PATH.lines.yuzuHoney}/${PATH.yuzuHoneyLine.lipSleepingMask}`,
+        line: PATH.lines.yuzuHoney,
+        product: PATH.yuzuHoneyLine.lipSleepingMask,
       },
       bottleUrl: bottle6,
       index: 5,

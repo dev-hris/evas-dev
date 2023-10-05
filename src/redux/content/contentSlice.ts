@@ -2,8 +2,6 @@ import {PayloadAction, createSlice} from '@reduxjs/toolkit';
 
 import {IContentState, IProduct, ILine} from '../interfaces';
 
-import {RootState} from '../store';
-
 import {lines} from '../../utils/constants/fraijour';
 
 import {getLine, getProduct} from './contentThunks';
@@ -13,8 +11,30 @@ const initialState: IContentState = {
   activeLine: '',
   allProducts: [],
   activeProduct: '',
-  line: {},
-  product: {},
+  line: {
+    promo: {
+      image: '',
+      purpose: '',
+      description: '',
+      labels: [],
+      title: '',
+    },
+    highlights: {
+      description: '',
+      list: [],
+    },
+  },
+  product: {
+    content: '',
+    volume: '',
+    application: '',
+    description: '',
+    lineName: '',
+    productName: '',
+    image: '',
+  },
+  isLoading: false,
+  error: undefined,
 };
 
 export const contentSlice = createSlice({
@@ -40,24 +60,28 @@ export const contentSlice = createSlice({
   extraReducers: {
     [getLine.fulfilled.type]: (state, action: PayloadAction<ILine>) => {
       state.line = action.payload;
+      state.isLoading = false;
     },
-    // [getLine.pending.type]: (state) => {
-    //   // state.isLoading = true;
-    // },
-    // [getLine.rejected.type]: (state, action: PayloadAction<string>) => {
-    //   // state.isLoading = false;
-    //   // state.error = action.payload;
-    // },
+    [getLine.pending.type]: (state) => {
+      state.error = undefined;
+      state.isLoading = true;
+    },
+    [getLine.rejected.type]: (state, action: PayloadAction<string>) => {
+      state.isLoading = false;
+      state.error = action.payload;
+    },
     [getProduct.fulfilled.type]: (state, action: PayloadAction<IProduct>) => {
       state.product = action.payload;
+      state.isLoading = false;
     },
-    // [getProduct.pending.type]: (state) => {
-    //   // state.isLoading = true;
-    // },
-    // [getProduct.rejected.type]: (state, action: PayloadAction<string>) => {
-    //   // state.isLoading = false;
-    //   // state.error = action.payload;
-    // },
+    [getProduct.pending.type]: (state) => {
+      state.error = undefined;
+      state.isLoading = true;
+    },
+    [getProduct.rejected.type]: (state, action: PayloadAction<string>) => {
+      state.isLoading = false;
+      state.error = action.payload;
+    },
   },
 });
 

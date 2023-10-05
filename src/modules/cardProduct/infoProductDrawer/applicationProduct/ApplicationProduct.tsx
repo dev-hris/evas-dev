@@ -7,16 +7,21 @@ import {CustomButton} from '../../../../components/customButton/CustomButton';
 
 import {ButtonVariant} from '../../../../utils/constants/buttonVariantEnum';
 
+import {splitStringByBr} from '../../../../utils/helpers/splitString';
+import {IProduct} from '../../../../redux/interfaces';
+
 import styles from './applicationProduct.module.scss';
 
 type ApplicationProductProps = {
   isActiveApplication: boolean;
   handleApplicationDrawer: (flag: boolean) => void;
+  product: IProduct;
 }
 
 export const ApplicationProduct: React.FunctionComponent<ApplicationProductProps> = ({
   isActiveApplication,
   handleApplicationDrawer,
+  product,
 }) => {
   const openApplication = () => {
     handleApplicationDrawer(true);
@@ -44,15 +49,11 @@ export const ApplicationProduct: React.FunctionComponent<ApplicationProductProps
         </CustomButton>
       </div>
       <div className={cn(styles.descriptionApplication, {[styles.active]: isActiveApplication})}>
-          Сделайте кожу более эластичной, используя липосомы! Благодаря новому липосомному типу
-          ретинола, он воздействует на кожу эффективнее и стабильнее, чем ретинол.
-        <br /><br />
-          Наполнение, подтягивание и поддержание эластичности кожи благодаря 3 видам
-          коллагена Коллаген Attelo, водорастворимый коллаген, жирорастворимый коллаген.
-        <br /><br />
-          7 комплексов коллагена, которые впитываются непосредственно в кожу Микромаломолекулярный
-          коллаген 4-го поколения размером с 170 000 волоса глубоко впитывается в кожу и удерживает
-          разрушенное ядро кожи 9 видов пептидов.
+        {splitStringByBr(product.content).map((part, id) =>
+          <div key={id}>
+            {part}
+            <br/>
+          </div>)}.
       </div>
     </div>
   );
