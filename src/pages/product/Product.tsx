@@ -31,7 +31,7 @@ export const Product: React.FunctionComponent = () => {
 
   return (
     <div className={styles.main}>
-      {!isLoading && <CardProduct />}
+      <CardProduct />
     </div>
   );
 };

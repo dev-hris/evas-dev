@@ -2,10 +2,10 @@ import {PATH} from './routeConstants';
 
 export enum allProductsLines {
   'RetineCollagen3DCore' = 'Retine-Collagen 3D Core',
-  'HeartleafBlemish' = 'heartleaf Blemish',
-  'ProMoisture' = 'pro moisture',
-  'BiomeLacto' = 'biome 5-lacto',
-  'YuzuHoney' = 'yuzu honey',
+  'HeartleafBlemish' = 'Heartleaf Blemish',
+  'ProMoisture' = 'Pro moisture',
+  'BiomeLacto' = 'Biome 5-Lacto',
+  'YuzuHoney' = 'Yuzu honey',
   'OriginalHerbWormwood' = 'Original herb wormwood',
 }
 

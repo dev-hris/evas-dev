@@ -37,7 +37,7 @@ const  biome5lactoLine = [
 const proMoistureLine = [
   'enzymePowderWash',
   'creamyToner',
-  'moistureSheetMask',
+  'sheetMask',
   'intensiveCream',
 ];
 

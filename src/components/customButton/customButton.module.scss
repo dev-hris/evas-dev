@@ -91,9 +91,14 @@
   &.evasBtnPortage {
     border: 1px solid $portage;
     background-color: transparent;
-    
+
     &:hover {
-      background-color: $butterflyBush;
+      background-color: $portage;
+      color: $white;
+
+      > svg > path {
+        fill: $white;
+      }
     }
   }
 
@@ -103,7 +108,12 @@
     background-color: transparent;
 
     &:hover {
-      background-color: $aquaForestHover;
+      background-color: $aquaForest;
+      color: $white;
+
+      > svg > path {
+        fill: $white;
+      }
     }
   }
 
@@ -113,7 +123,12 @@
     background-color: transparent;
 
     &:hover {
-      background-color: $greenSmokeHover;
+      background-color: $greenSmoke;
+      color: $white;
+
+      > svg > path {
+        fill: $white;
+      }
     }
   }
 
@@ -123,7 +138,12 @@
     background-color: transparent;
 
     &:hover {
-      background-color: $portageHover;
+      background-color: $lightPortage;
+      color: $white;
+
+      > svg > path {
+        fill: $white;
+      }
     }
   }
 
@@ -133,7 +153,12 @@
     background-color: transparent;
 
     &:hover {
-      background-color: $newYorkPinkHover;
+      background-color: $newYorkPink;
+      color: $white;
+
+      > svg > path {
+        fill: $white;
+      }
     }
   }
 
@@ -143,7 +168,12 @@
     background-color: transparent;
 
     &:hover {
-      background-color: $ronchiHover;
+      background-color: $ronchi;
+      color: $white;
+
+      > svg > path {
+        fill: $white;
+      }
     }
   }
 

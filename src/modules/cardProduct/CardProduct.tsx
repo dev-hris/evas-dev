@@ -21,6 +21,7 @@ import styles from './cardProduct.module.scss';
 export const CardProduct = () => {
   const navigate = useNavigate();
   const product = useAppSelector(state => state.contentSlice.product);
+  const isLoading = useAppSelector(state => state.contentSlice.isLoading);
   const activeProduct = useAppSelector(state => state.contentSlice.activeProduct);
   const activeLine = useAppSelector(state => state.contentSlice.activeLine);
   const allProducts = useAppSelector(state => state.contentSlice.allProducts);
@@ -110,7 +111,7 @@ export const CardProduct = () => {
 
   return (
     <div className={styles.container}>
-      {product && <>
+      {(product && !isLoading) && <>
         <div className={styles.leftSidebar}>
           <div className={styles.heading}>
             <CustomButton
@@ -172,35 +173,35 @@ export const CardProduct = () => {
         >
           <InfoProductDrawer values={infoProductValue} handleClose={handleCloseDrawer} />
         </Drawer>
-        <div className={cn(styles.navigation, {
-          [styles.active]: isActiveDescription || isActiveApplication,
-        })}>
-          <CustomButton
-            variant={ButtonVariant.White}
-            onClick={redirectToPrevProduct}
-            className={styles.navigationBtnLeft}
-            disabled={!isPrevProduct}>
-            <>
-              <div className={styles.circleLeft}>
-                <ArrowToLeft className={styles.icon}/>
-              </div>
-              <span className={styles.text}>Предыдущий продукт</span>
-            </>
-          </CustomButton>
-          <CustomButton
-            variant={ButtonVariant.White}
-            onClick={redirectToNextProduct}
-            className={styles.navigationBtnRight}
-            disabled={!isNextProduct}>
-            <>
-              <span className={styles.text}>Следующий продукт</span>
-              <div className={styles.circleRight}>
-                <ArrowToRight className={styles.icon}/>
-              </div>
-            </>
-          </CustomButton>
-        </div>
       </>}
+      <div className={cn(styles.navigation, {
+        [styles.active]: isActiveDescription || isActiveApplication,
+      })}>
+        <CustomButton
+          variant={ButtonVariant.White}
+          onClick={redirectToPrevProduct}
+          className={styles.navigationBtnLeft}
+          disabled={!isPrevProduct}>
+          <>
+            <div className={styles.circleLeft}>
+              <ArrowToLeft className={styles.icon}/>
+            </div>
+            <span className={styles.text}>Предыдущий продукт</span>
+          </>
+        </CustomButton>
+        <CustomButton
+          variant={ButtonVariant.White}
+          onClick={redirectToNextProduct}
+          className={styles.navigationBtnRight}
+          disabled={!isNextProduct}>
+          <>
+            <span className={styles.text}>Следующий продукт</span>
+            <div className={styles.circleRight}>
+              <ArrowToRight className={styles.icon}/>
+            </div>
+          </>
+        </CustomButton>
+      </div>
     </div>
   );
 };

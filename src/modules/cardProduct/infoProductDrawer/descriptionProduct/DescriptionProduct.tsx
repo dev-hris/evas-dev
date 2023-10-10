@@ -67,13 +67,13 @@ export const DescriptionProduct: React.FunctionComponent<DescriptionProductProps
           </div>
         </div>
         <div className={styles.line} />
-        <p>
+        <div>
           {splitStringByBr(product.description).map((part, id) =>
             <div key={id}>
               {part}
               <br/>
             </div>)}
-        </p>
+        </div>
       </div>
     </div>
   );
