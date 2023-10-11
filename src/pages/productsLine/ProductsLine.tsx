@@ -40,9 +40,11 @@ export const ProductsLine: React.FunctionComponent = () => {
     <div className={styles.main}>
       {!isLoading && <>
         <Promo
+          lineProduct={lineProduct}
           promo={line.promo}
           clickOnButton={handleMoveToBenefits}/>
         <ScrollableBenefits
+          lineProduct={lineProduct}
           title={line.promo.title}
           description={line.highlights.description}
           benefitsList={line.highlights.list}/>

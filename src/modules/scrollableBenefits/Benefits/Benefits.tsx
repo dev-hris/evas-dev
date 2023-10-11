@@ -10,6 +10,7 @@ type BenefitsProps = {
   description: string;
   id: number;
   activeId: number;
+  lineProduct: string | undefined
   setActiveId: (id: number, isView: boolean) => void;
 }
 
@@ -17,6 +18,7 @@ export const Benefits: React.FunctionComponent<BenefitsProps> = ({
   title,
   description,
   id,
+  lineProduct,
   activeId,
   setActiveId,
 }) => {
@@ -30,7 +32,7 @@ export const Benefits: React.FunctionComponent<BenefitsProps> = ({
     <div ref={ref} className={styles.benefit}>
       <h3 className={cn(
         styles.benefitTitle,
-        {[styles.active]: id === activeId},
+        {[styles[lineProduct || '']]: id === activeId},
       )}>
         {title}
       </h3>

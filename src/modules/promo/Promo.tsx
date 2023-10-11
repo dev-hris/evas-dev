@@ -26,11 +26,23 @@ type Props = {
       labels: {text: string}[];
       title: string;
     };
-    clickOnButton: () => void
+    clickOnButton: () => void;
+    lineProduct: string | undefined;
 }
+
+const varintBtn = new Map([
+  ['heartLeaf', ButtonVariant.GreenSmokeTotal],
+  ['originalArtemisia', ButtonVariant.Primary],
+  ['originalHerbWormwood', ButtonVariant.AquaForestTotal],
+  ['yuzuHoney', ButtonVariant.RonchiTotal],
+  ['retinCollagen3dCore', ButtonVariant.Primary],
+  ['proMoisture', ButtonVariant.IndigoTotal],
+  ['biome5lacto', ButtonVariant.NewYorkPinkTotal],
+]);
 
 export const Promo: React.FunctionComponent<Props> = ({
   promo,
+  lineProduct,
   clickOnButton,
 }) => {
   const navigate = useNavigate();
@@ -89,7 +101,7 @@ export const Promo: React.FunctionComponent<Props> = ({
       <div className={styles.buttonDownBlock}>
         <RoundButton
           className={styles.buttonDown}
-          variant={ButtonVariant.Primary}
+          variant={varintBtn.get(lineProduct || '') || ButtonVariant.Portage}
           onClick={clickOnButton}>
           <ArrowToDown className={styles.iconDown} />
         </RoundButton>
@@ -98,6 +110,7 @@ export const Promo: React.FunctionComponent<Props> = ({
     <div className={cn(styles.pills, {[styles.active]: inView})}>
       {pills.map(({className, title}, id) => (
         <CustomLabel
+          lineProduct={lineProduct}
           className={cn(className, {[styles.active]: inView})}
           title={title}
           key={id}

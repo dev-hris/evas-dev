@@ -10,11 +10,13 @@ type Props = {
     title: string;
     description: string;
     benefitsList: {value: string; definition: string}[];
+    lineProduct: string | undefined;
 }
 
 export const ScrollableBenefits: React.FunctionComponent<Props> = ({
   title,
   description,
+  lineProduct,
   benefitsList}) => {
   const [queueActiveId, setQueueActiveId] = useState<number[]>([0]);
 
@@ -40,6 +42,7 @@ export const ScrollableBenefits: React.FunctionComponent<Props> = ({
             id={id}
             title={benefit.value}
             description={benefit.definition}
+            lineProduct={lineProduct}
             activeId={queueActiveId[0]}
             setActiveId={changeActiveId}
           />

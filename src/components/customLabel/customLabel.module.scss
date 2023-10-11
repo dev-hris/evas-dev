@@ -1,13 +1,11 @@
 @import '../../theme/index';
 
 .container {
-  width:fit-content;
+  width: fit-content;
   white-space: nowrap;
   height: 48px;
   padding: 15px 25px 15px 25px;
   gap: 10px;
-  background: linear-gradient(180deg, rgba(206, 201, 232, 0.65) -136%, rgba(206, 201, 232, 0.00) 152%),
-    linear-gradient(156deg, rgba(255, 255, 255, 0.36) 14%, rgba(255, 255, 255, 0.00) 92%);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: 40px;
@@ -15,6 +13,46 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &.default {
+    background: linear-gradient(180deg, rgba(206, 201, 232, 0.65) -136%, rgba(206, 201, 232, 0.00) 152%),
+    linear-gradient(156deg, rgba(255, 255, 255, 0.36) 14%, rgba(255, 255, 255, 0.00) 92%);
+  }
+
+  &.heartLeaf {
+    background: linear-gradient(180deg, rgba(160, 178, 100, 0.65) -136%, rgba(206, 201, 232, 0.00) 152%),
+    linear-gradient(156deg, rgba(255, 255, 255, 0.36) 14%, rgba(255, 255, 255, 0.00) 92%);
+  }
+
+  &.originalArtemisia {
+    background: linear-gradient(180deg, rgba(206, 201, 232, 0.65) -136%, rgba(206, 201, 232, 0.00) 152%),
+    linear-gradient(156deg, rgba(255, 255, 255, 0.36) 14%, rgba(255, 255, 255, 0.00) 92%);
+  }
+
+  &.originalHerbWormwood {
+    background: linear-gradient(180deg, rgba(96, 154, 111, 0.65) -136%, rgba(206, 201, 232, 0.00) 152%),
+    linear-gradient(156deg, rgba(255, 255, 255, 0.36) 14%, rgba(255, 255, 255, 0.00) 92%);
+  }
+
+  &.yuzuHoney {
+    background: linear-gradient(180deg, rgba(232, 191, 86, 0.65) -136%, rgba(206, 201, 232, 0.00) 152%),
+    linear-gradient(156deg, rgba(255, 255, 255, 0.36) 14%, rgba(255, 255, 255, 0.00) 92%);
+  }
+
+  &.retinCollagen3dCore {
+    background: linear-gradient(180deg, rgba(206, 201, 232, 0.65) -136%, rgba(206, 201, 232, 0.00) 152%),
+    linear-gradient(156deg, rgba(255, 255, 255, 0.36) 14%, rgba(255, 255, 255, 0.00) 92%);
+  }
+
+  &.proMoisture {
+    background: linear-gradient(180deg, #7998e295 -136%, rgba(206, 201, 232, 0.00) 152%),
+    linear-gradient(156deg, rgba(255, 255, 255, 0.36) 14%, rgba(255, 255, 255, 0.00) 92%);
+  }
+
+  &.biome5lacto {
+    background: linear-gradient(180deg, rgba(217, 125, 116, 0.65) -136%, rgba(206, 201, 232, 0.00) 152%),
+    linear-gradient(156deg, rgba(255, 255, 255, 0.36) 14%, rgba(255, 255, 255, 0.00) 92%);
+  }
 
   .title {
     font-weight: 700;
