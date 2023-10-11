@@ -1,23 +1,28 @@
 {
   "files": {
-    "main.css": "/evas-dev/static/css/main.1f8bbcae.css",
-    "main.js": "/evas-dev/static/js/main.4727932f.js",
+    "main.css": "/evas-dev/static/css/main.d73579c2.css",
+    "main.js": "/evas-dev/static/js/main.829fc346.js",
     "static/js/787.28cb0dcd.chunk.js": "/evas-dev/static/js/787.28cb0dcd.chunk.js",
     "static/media/test.mp4": "/evas-dev/static/media/test.6fba2d8ae0210c62197f.mp4",
     "static/media/welcomeMobile.gif": "/evas-dev/static/media/welcomeMobile.4c8643aff4d11c4440ff.gif",
     "static/media/welcomeDesktop.gif": "/evas-dev/static/media/welcomeDesktop.6691c484eab40c287b3a.gif",
     "static/media/backgroundBottle2.png": "/evas-dev/static/media/backgroundBottle2.4bd7e4bc7da4f3f5cc4e.png",
     "static/media/backgroundBottle3.png": "/evas-dev/static/media/backgroundBottle3.763b53f8ee2e65de427e.png",
+    "static/media/backgroundProductWormMood.png": "/evas-dev/static/media/backgroundProductWormMood.11155c5003c782c54c55.png",
+    "static/media/backgroundProductProMoisture.png": "/evas-dev/static/media/backgroundProductProMoisture.a86a4bbdff5da96f8fe3.png",
     "static/media/backgroundBottle6.png": "/evas-dev/static/media/backgroundBottle6.eb100d6377fc061ceb56.png",
+    "static/media/backgroundProductBiome.png": "/evas-dev/static/media/backgroundProductBiome.78e65135d54af761a42a.png",
     "static/media/backgroundBottle1.png": "/evas-dev/static/media/backgroundBottle1.46598500d534d6eca988.png",
     "static/media/yuzuHoneyLine.jpg": "/evas-dev/static/media/yuzuHoneyLine.ea76c4ae5f8f41789bc2.jpg",
+    "static/media/backgroundProductСore.png": "/evas-dev/static/media/backgroundProductСore.fa48d5dc757329fe9f9e.png",
     "static/media/mainBackground.png": "/evas-dev/static/media/mainBackground.fa48d5dc757329fe9f9e.png",
+    "static/media/backgroundProductYuzuHoney.png": "/evas-dev/static/media/backgroundProductYuzuHoney.ada6d11fe01d3fa966a3.png",
     "static/media/backgroundBottle4.png": "/evas-dev/static/media/backgroundBottle4.dc27e678dbf90210438b.png",
     "static/media/backgroundBottle5.png": "/evas-dev/static/media/backgroundBottle5.e4ad3ca750bdf6361219.png",
+    "static/media/backgroundProductHeartLeaf.png": "/evas-dev/static/media/backgroundProductHeartLeaf.4a3858848bc462bf6ac4.png",
     "static/media/retineCollagenLine.jpg": "/evas-dev/static/media/retineCollagenLine.a5f446987077c269a22a.jpg",
     "static/media/heartleafBlemish.jpg": "/evas-dev/static/media/heartleafBlemish.e0c894cfb5f2dd34777b.jpg",
     "static/media/originalHerbWormwoodLine.jpg": "/evas-dev/static/media/originalHerbWormwoodLine.72fd485a17f726b53ed9.jpg",
-    "static/media/backgroundProduct1.jpg": "/evas-dev/static/media/backgroundProduct1.9403da84ab197310a4cc.jpg",
     "static/media/proMoistureLine.jpg": "/evas-dev/static/media/proMoistureLine.322163ef2a90614d96e2.jpg",
     "static/media/biomeLactoLine.jpg": "/evas-dev/static/media/biomeLactoLine.85aab7fbbbfdb4d6a5e5.jpg",
     "static/media/background2.png": "/evas-dev/static/media/background2.b9ef3f34b4435c40f835.png",
@@ -71,12 +76,12 @@
     "static/media/tickDown.svg": "/evas-dev/static/media/tickDown.76984433efa3350ed6cce643efc8b583.svg",
     "static/media/lineToLeft.svg": "/evas-dev/static/media/lineToLeft.1210106b94d790b6bd485de487047331.svg",
     "static/media/dropdownArrow.svg": "/evas-dev/static/media/dropdownArrow.59b7d0d2e3a095308eff2bc6ab589ecf.svg",
-    "main.1f8bbcae.css.map": "/evas-dev/static/css/main.1f8bbcae.css.map",
-    "main.4727932f.js.map": "/evas-dev/static/js/main.4727932f.js.map",
+    "main.d73579c2.css.map": "/evas-dev/static/css/main.d73579c2.css.map",
+    "main.829fc346.js.map": "/evas-dev/static/js/main.829fc346.js.map",
     "787.28cb0dcd.chunk.js.map": "/evas-dev/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f8bbcae.css",
-    "static/js/main.4727932f.js"
+    "static/css/main.d73579c2.css",
+    "static/js/main.829fc346.js"
   ]
 }
