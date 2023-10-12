@@ -1,11 +1,14 @@
 {
   "files": {
-    "main.css": "/evas-dev/static/css/main.d73579c2.css",
-    "main.js": "/evas-dev/static/js/main.829fc346.js",
+    "main.css": "/evas-dev/static/css/main.360ae340.css",
+    "main.js": "/evas-dev/static/js/main.95e19c0e.js",
     "static/js/787.28cb0dcd.chunk.js": "/evas-dev/static/js/787.28cb0dcd.chunk.js",
     "static/media/test.mp4": "/evas-dev/static/media/test.6fba2d8ae0210c62197f.mp4",
     "static/media/welcomeMobile.gif": "/evas-dev/static/media/welcomeMobile.4c8643aff4d11c4440ff.gif",
     "static/media/welcomeDesktop.gif": "/evas-dev/static/media/welcomeDesktop.6691c484eab40c287b3a.gif",
+    "static/media/biomeLactoLine.png": "/evas-dev/static/media/biomeLactoLine.7035ba3b31f8546b190c.png",
+    "static/media/proMoistureLine.png": "/evas-dev/static/media/proMoistureLine.aae3b4c756c3218ca40b.png",
+    "static/media/heartleafBlemish.png": "/evas-dev/static/media/heartleafBlemish.fe87a7165755ab6d6880.png",
     "static/media/backgroundBottle2.png": "/evas-dev/static/media/backgroundBottle2.4bd7e4bc7da4f3f5cc4e.png",
     "static/media/backgroundBottle3.png": "/evas-dev/static/media/backgroundBottle3.763b53f8ee2e65de427e.png",
     "static/media/backgroundProductWormMood.png": "/evas-dev/static/media/backgroundProductWormMood.11155c5003c782c54c55.png",
@@ -21,10 +24,7 @@
     "static/media/backgroundBottle5.png": "/evas-dev/static/media/backgroundBottle5.e4ad3ca750bdf6361219.png",
     "static/media/backgroundProductHeartLeaf.png": "/evas-dev/static/media/backgroundProductHeartLeaf.4a3858848bc462bf6ac4.png",
     "static/media/retineCollagenLine.jpg": "/evas-dev/static/media/retineCollagenLine.a5f446987077c269a22a.jpg",
-    "static/media/heartleafBlemish.jpg": "/evas-dev/static/media/heartleafBlemish.e0c894cfb5f2dd34777b.jpg",
     "static/media/originalHerbWormwoodLine.jpg": "/evas-dev/static/media/originalHerbWormwoodLine.72fd485a17f726b53ed9.jpg",
-    "static/media/proMoistureLine.jpg": "/evas-dev/static/media/proMoistureLine.322163ef2a90614d96e2.jpg",
-    "static/media/biomeLactoLine.jpg": "/evas-dev/static/media/biomeLactoLine.85aab7fbbbfdb4d6a5e5.jpg",
     "static/media/background2.png": "/evas-dev/static/media/background2.b9ef3f34b4435c40f835.png",
     "static/media/background3.png": "/evas-dev/static/media/background3.a0400bc66a9285d19421.png",
     "static/media/background6.png": "/evas-dev/static/media/background6.9f1d35adbb829cdbb0b5.png",
@@ -76,12 +76,12 @@
     "static/media/tickDown.svg": "/evas-dev/static/media/tickDown.76984433efa3350ed6cce643efc8b583.svg",
     "static/media/lineToLeft.svg": "/evas-dev/static/media/lineToLeft.1210106b94d790b6bd485de487047331.svg",
     "static/media/dropdownArrow.svg": "/evas-dev/static/media/dropdownArrow.59b7d0d2e3a095308eff2bc6ab589ecf.svg",
-    "main.d73579c2.css.map": "/evas-dev/static/css/main.d73579c2.css.map",
-    "main.829fc346.js.map": "/evas-dev/static/js/main.829fc346.js.map",
+    "main.360ae340.css.map": "/evas-dev/static/css/main.360ae340.css.map",
+    "main.95e19c0e.js.map": "/evas-dev/static/js/main.95e19c0e.js.map",
     "787.28cb0dcd.chunk.js.map": "/evas-dev/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d73579c2.css",
-    "static/js/main.829fc346.js"
+    "static/css/main.360ae340.css",
+    "static/js/main.95e19c0e.js"
   ]
 }
