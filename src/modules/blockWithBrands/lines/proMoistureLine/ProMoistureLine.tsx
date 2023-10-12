@@ -29,6 +29,8 @@ export const ProMoistureLine: React.FunctionComponent<Props> = ({
       return styles.thirdPopover;
     case 3:
       return styles.fourthPopover;
+    case 4:
+      return styles.fifthPopover;
     }
   }
 
@@ -44,7 +46,7 @@ export const ProMoistureLine: React.FunctionComponent<Props> = ({
             className={styles.popover}
             forcedOpening={index === activeProduct}
             handleOpen={product.onClick}
-            isLeft={index === 3}>
+            isLeft={index === 3 || index === 4}>
             <PopoverContainer
               title={product.title}
               variant={ButtonVariant.Indigo}

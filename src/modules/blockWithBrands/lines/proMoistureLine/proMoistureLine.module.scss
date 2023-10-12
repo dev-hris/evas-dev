@@ -2,10 +2,11 @@
 
 .container {
   display: inline-flex;
+  position: relative;
   width: 100%;
   height: 100%;
   border-radius: 25px;
-  background: url('../../../../assets/images/fraijourMain/productLine/proMoistureLine.jpg') no-repeat;
+  background: url('../../../../assets/images/fraijourMain/productLine/proMoistureLine.png') no-repeat;
   background-size: 365px 264px;
   animation: show-block 0.5s ease-in-out;
 
@@ -46,8 +47,9 @@
   }
 
   .firstPopover {
-    margin-left: 79px;
-    margin-top: 97px;
+    margin-left: 20%;
+    margin-top: 58%;
+    position: absolute;
 
     .popover {
       @include respond-to(desktop) {
@@ -57,45 +59,18 @@
         bottom: 22px;
       }
     }
-
-    @include respond-to(tablet) {
-      margin-left: 164px;
-      margin-top: 214px;
-    }
-  
-    @include respond-to(desktop) {
-      margin-left: 190px;
-      margin-top: 250px;
-    }
-
-    @include respond-to(largeDesktop) {
-      margin-left: 255px;
-      margin-top: 330px;
-    }
   }
 
   .secondPopover {
-    margin-left: 77px;
-    margin-top: 120px;
-    @include respond-to(tablet) {
-      margin-left: 110px;
-      margin-top: 264px;
-    }
-    
-    @include respond-to(desktop) {
-      margin-left: 119px;
-      margin-top: 315px;
-    }
-
-    @include respond-to(largeDesktop) {
-      margin-left: 189px;
-      margin-top: 415px;
-    }
+    margin-left: 26%;
+    margin-top: 31%;
+    position: absolute;
   }
 
   .thirdPopover {
-    margin-left: 76px;
-    margin-top: 183px;
+    margin-left: 42%;
+    margin-top: 45%;
+    position: absolute;
 
     .popover {
       @include respond-to(tablet) {
@@ -108,26 +83,12 @@
         margin-left: 0px;
       }
     }
-
-    @include respond-to(tablet) {
-      margin-left: 106px;
-      margin-top: 419px;
-    }
-
-    @include respond-to(desktop) {
-      margin-left: 119px;
-      margin-top: 513px;
-    }
-
-    @include respond-to(largeDesktop) {
-      margin-left: 163px;
-      margin-top: 659px;
-    }
   }
 
   .fourthPopover {
-    margin-left: 31px;
-    margin-top: 86px;
+    margin-left: 72%;
+    margin-top: 60%;
+    position: absolute;
 
     .popover {
       @include respond-to(tablet) {
@@ -140,20 +101,23 @@
         bottom: 22px;
       }
     }
+  }
 
-    @include respond-to(tablet) {
-      margin-left: 22px;
-      margin-top: 180px;
-    }
+  .fifthPopover {
+    margin-left: 65%;
+    margin-top: 25%;
+    position: absolute;
 
-    @include respond-to(desktop) {
-      margin-left: 25px;
-      margin-top: 225px;
-    }
-
-    @include respond-to(largeDesktop) {
-      margin-left: 50px;
-      margin-top: 284px;
+    .popover {
+      @include respond-to(tablet) {
+        bottom: -24px;
+      }
+      @include respond-to(desktop) {
+        bottom: -35px;
+      }
+      @include respond-to(largeDesktop) {
+        bottom: 22px;
+      }
     }
   }
 }

@@ -49,94 +49,115 @@ export const RETINE_COLLAGEN_PRODUCTS = [
 
 const HEARTLEAF_BLEMISH_PRODUCTS = [
   {
-    title: 'Eye Core R',
+    title: 'Blemish pH Balanced Cleansing Foam',
     description: `Нежный очищающий гель для 
     умывания на основе аминокислот. 
     Мягко очищает кожу, не оставляя чувство стянутости.`,
     path: PATH.heartLeafLine.blemishphBalancedCleansingFoam,
   },
   {
-    title: 'Core RIGINAL',
+    title: 'Blemish Toner',
     description: `Core Toner для 
   умывания на основе аминокислот. 
   Мягко очищает кожу, не оставляя чувство стянутости.`,
     path: PATH.heartLeafLine.blemishToner,
   },
   {
-    title: 'Ampoule ARTEMISIA',
+    title: 'Intensive Calming Essence',
     description: `Ampoule Mist для 
   умывания на основе аминокислот. 
   Мягко очищает кожу, не оставляя чувство стянутости.`,
     path: PATH.heartLeafLine.intensiveCalmingEssence,
   },
   {
-    title: 'Ampoule csc',
+    title: 'Blemish Moisture Cream',
     description: `Ampoule Mist для 
   умывания на основе аминокислот. 
   Мягко очищает кожу, не оставляя чувство стянутости.`,
     path: PATH.heartLeafLine.blemishMoistureCream,
   },
+  {
+    title: 'Pore Melting Gel Mask',
+    description: `Ampoule Mist для 
+  умывания на основе аминокислот. 
+  Мягко очищает кожу, не оставляя чувство стянутости.`,
+    path: PATH.heartLeafLine.poreMeltingGelMask,
+  },
 ];
 
 const PRO_MOISTURE_PRODUCTS = [
   {
-    title: '1Eye Core PRO MOISTURE',
+    title: 'Enzyme Powder Wash',
     description: `Нежный очищающий гель для 
     умывания на основе аминокислот. 
     Мягко очищает кожу, не оставляя чувство стянутости.`,
     path: PATH.proMoistureLine.enzymePowderWash,
   },
   {
-    title: '2Core PRO MOISTURE',
+    title: 'Sheet Mask',
     description: `Core Toner для 
-  умывания на основе аминокислот. 
-  Мягко очищает кожу, не оставляя чувство стянутости.`,
-    path: PATH.proMoistureLine.creamyToner,
-  },
-  {
-    title: '3Ampoule PRO MOISTURE',
-    description: `Ampoule Mist для 
   умывания на основе аминокислот. 
   Мягко очищает кожу, не оставляя чувство стянутости.`,
     path: PATH.proMoistureLine.moistureSheetMask,
   },
   {
-    title: '4Eye PRO MOISTURE',
+    title: 'Creamy Toner',
+    description: `Ampoule Mist для 
+  умывания на основе аминокислот. 
+  Мягко очищает кожу, не оставляя чувство стянутости.`,
+    path: PATH.proMoistureLine.creamyToner,
+  },
+  {
+    title: 'Intensive Cream',
     description: `Eye Cream гель для 
   умывания на основе аминокислот. 
   Мягко очищает кожу, не оставляя чувство стянутости.`,
     path: PATH.proMoistureLine.intensiveCream,
   },
+  {
+    title: 'Milk Toning Clay Mask',
+    description: `Eye Cream гель для 
+  умывания на основе аминокислот. 
+  Мягко очищает кожу, не оставляя чувство стянутости.`,
+    path: PATH.proMoistureLine.milkToningClayMask,
+  },
 ];
 
 const BIOME_LACTO_PRODUCTS = [
   {
-    title: '1Eye Core BIOME lin',
+    title: 'Balance Toner',
     description: `Нежный очищающий гель для 
     умывания на основе аминокислот. 
     Мягко очищает кожу, не оставляя чувство стянутости.`,
-    path: PATH.biome5lactoLine.balanceGelCleanser,
-  },
-  {
-    title: '2Core LINE',
-    description: `Core Toner для 
-  умывания на основе аминокислот. 
-  Мягко очищает кожу, не оставляя чувство стянутости.`,
     path: PATH.biome5lactoLine.balanceToner,
   },
   {
-    title: '3Ampoule BIOME LACTO LINE',
+    title: 'Balance Moisturizer',
     description: `Ampoule Mist для 
+  умывания на основе аминокислот. 
+  Мягко очищает кожу, не оставляя чувство стянутости.`,
+    path: PATH.biome5lactoLine.balanceMoisturizer,
+  },
+  {
+    title: 'Treatment Ampoule',
+    description: `Eye Cream гель для 
   умывания на основе аминокислот. 
   Мягко очищает кожу, не оставляя чувство стянутости.`,
     path: PATH.biome5lactoLine.treatmentAmpoule,
   },
   {
-    title: '4Eye BIOME LACTO LINE',
+    title: 'Retexturizing Rosy Mask',
+    description: `Core Toner для 
+  умывания на основе аминокислот. 
+  Мягко очищает кожу, не оставляя чувство стянутости.`,
+    path: PATH.biome5lactoLine.retexturizingRosyMask,
+  },
+  {
+    title: 'Balance Gel Cleanser',
     description: `Eye Cream гель для 
   умывания на основе аминокислот. 
   Мягко очищает кожу, не оставляя чувство стянутости.`,
-    path: PATH.biome5lactoLine.balanceMoisturizer,
+    path: PATH.biome5lactoLine.balanceGelCleanser,
   },
 ];
 

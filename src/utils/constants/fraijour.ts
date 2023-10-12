@@ -28,10 +28,11 @@ const  originalHerbWormwoodLine = [
 ];
 
 const  biome5lactoLine = [
-  'balanceGelCleanser',
   'balanceToner',
-  'treatmentAmpoule',
   'balanceMoisturizer',
+  'treatmentAmpoule',
+  'retexturizingRosyMask',
+  'balanceGelCleanser',
 ];
 
 const proMoistureLine = [
@@ -39,6 +40,7 @@ const proMoistureLine = [
   'creamyToner',
   'sheetMask',
   'intensiveCream',
+  'milkToningClayMask',
 ];
 
 const  heartLeafLine = [
@@ -46,6 +48,7 @@ const  heartLeafLine = [
   'blemishToner',
   'intensiveCalmingEssence',
   'blemishMoistureCream',
+  'poreMeltingGelMask',
 ];
 
 export const lines = new Map([

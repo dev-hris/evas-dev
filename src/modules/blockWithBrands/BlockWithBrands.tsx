@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import {useNavigate} from 'react-router-dom';
+import {useNavigate, useParams} from 'react-router-dom';
 
 import {allProductsLines, PRODUCTS_LINES} from '../../utils/constants/linesWithBrands';
-import {IProduct} from '../../utils/types/types';
+import {IProduct, ParamTypes} from '../../utils/types/types';
 
 import {CustomButton} from '../../components/customButton/CustomButton';
 import {ButtonVariant} from '../../utils/constants/buttonVariantEnum';
@@ -25,9 +25,20 @@ type BlockWithBrandsProps = {
   isHiddenLinesList?: boolean;
 }
 
+const linksLinesProduct = [
+  'retinCollagen3dCore',
+  'heartLeaf',
+  'proMoisture',
+  'biome5lacto',
+  'yuzuHoney',
+  'originalHerbWormwood',
+];
+
 export const BlockWithBrands: React.FunctionComponent<BlockWithBrandsProps> = ({
   isHiddenLinesList = false,
 }) => {
+
+  const {lineProduct} = useParams<ParamTypes>();
   const clickOnLine = (index: number)=> {
     setActiveLine(_ => {
       setProductsList(productLines[index].products);
@@ -44,8 +55,20 @@ export const BlockWithBrands: React.FunctionComponent<BlockWithBrandsProps> = ({
       onClick: ()=> {clickOnLine(linesIndex);}};
   });
 
-  const [activeLine, setActiveLine] = useState<number>(0);
-  const [productsList, setProductsList] = useState<IProduct[]>(productLines[0].products);
+  const [activeLine, setActiveLine] = useState<number>(() => {
+    const activeLine = linksLinesProduct.findIndex(v => v === lineProduct);
+    if(activeLine !== -1) {
+      return activeLine;
+    }
+    return 0;
+  });
+  const [productsList, setProductsList] = useState<IProduct[]>(() => {
+    const activeLine = linksLinesProduct.findIndex(v => v === lineProduct);
+    if(activeLine !== -1) {
+      return productLines[activeLine].products;
+    }
+    return productLines[0].products;
+  });
   const [activeProduct, setActiveProduct] = useState<number>(-1);
   const [isOpenDescription, setIsOpenDescription] = useState(false);
   const [isOpenProducts, setIsOpenProducts] = useState(false);
@@ -97,7 +120,6 @@ export const BlockWithBrands: React.FunctionComponent<BlockWithBrandsProps> = ({
         products={productsList}/>;
     }
   }
-
   return (<>
     <div className={styles.container}>
       <div className={styles.sidebar}>

@@ -2,10 +2,11 @@
 
 .container {
   display: inline-flex;
+  position: relative;
   width: 100%;
   height: 100%;
   border-radius: 25px;
-  background: url('../../../../assets/images/fraijourMain/productLine/heartleafBlemish.jpg') no-repeat;
+  background: url('../../../../assets/images/fraijourMain/productLine/heartleafBlemish.png') no-repeat;
   background-size: 365px 264px;
   animation: show-block 0.5s ease-in-out;
 
@@ -46,8 +47,9 @@
   }
 
   .firstPopover {
-    margin-left: 51px;
-    margin-top: 89px;
+    margin-left: 10%;
+    margin-top: 30%;
+    position: absolute;
 
     .popover {
       @include respond-to(tablet) {
@@ -60,45 +62,18 @@
         bottom: 22px;
       }
     }
-
-    @include respond-to(tablet) {
-      margin-left: 111px;
-      margin-top: 190px;
-    }
-
-    @include respond-to(desktop) {
-      margin-left: 119px;
-      margin-top: 234px;
-    }
-
-    @include respond-to(largeDesktop) {
-      margin-left: 165px;
-      margin-top: 319px;
-    }
   }
 
   .secondPopover {
-    margin-left: 66px;
-    margin-top: 128px;
-    @include respond-to(tablet) {
-      margin-left: 91px;
-      margin-top: 275px;
-    }
-
-    @include respond-to(desktop) {
-      margin-left: 96px;
-      margin-top: 327px;
-    }
-
-    @include respond-to(largeDesktop) {
-      margin-left: 161px;
-      margin-top: 445px;
-    }
+    margin-left: 29%;
+    margin-top: 37%;
+    position: absolute;
   }
 
   .thirdPopover {
-    margin-left: 111px;
-    margin-top: 118px;
+    margin-left: 50%;
+    margin-top: 45%;
+    position: absolute;
 
     .popover {
       @include respond-to(tablet) {
@@ -111,38 +86,22 @@
         margin-left: 22px;
       }
     }
-    @include respond-to(tablet) {
-      margin-left: 172px;
-      margin-top: 257px;
-    }
-
-    @include respond-to(desktop) {
-      margin-left: 212px;
-      margin-top: 301px;
-    }
-
-    @include respond-to(largeDesktop) {
-      margin-left: 273px;
-      margin-top: 412px;
-    }
   }
 
   .fourthPopover {
-    margin-left: 74px;
-    margin-top: 175px;
-    @include respond-to(tablet) {
-      margin-left: 103px;
-      margin-top: 373px;
-    }
+    margin-left: 85%;
+    margin-top: 55%;
+    position: absolute;
+  }
 
-    @include respond-to(desktop) {
-      margin-left: 119px;
-      margin-top: 437px;
-    }
-
-    @include respond-to(largeDesktop) {
-      margin-left: 178px;
-      margin-top: 589px;
+  .fifthPopover {
+    margin-left: 66%;
+    margin-top: 22%;
+    position: absolute;
+    .popover {
+      @include respond-to(tablet) {
+        margin-bottom: -100px;
+      }
     }
   }
 }

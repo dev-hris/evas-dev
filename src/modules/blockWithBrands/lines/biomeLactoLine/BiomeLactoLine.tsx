@@ -32,6 +32,8 @@ export const BiomeLactoLine: React.FunctionComponent<Props> = ({
       return styles.thirdPopover;
     case 3:
       return styles.fourthPopover;
+    case 4:
+      return styles.fifthPopover;
     }
   }
 
@@ -47,7 +49,7 @@ export const BiomeLactoLine: React.FunctionComponent<Props> = ({
             forcedOpening={index === activeProduct}
             className={styles.popover}
             handleOpen={product.onClick}
-            isLeft={index === 3}>
+            isLeft={index === 3 || index === 4}>
             <PopoverContainer
               title={product.title}
               variant={ButtonVariant.NewYorkPink}

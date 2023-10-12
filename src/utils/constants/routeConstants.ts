@@ -37,21 +37,24 @@ export const PATH = {
     calmingWateryCream: '/originalHerbWormwoodLine/calmingWateryCream',
   },
   biome5lactoLine: {
-    balanceGelCleanser: '/biome5lactoLine/balanceGelCleanser',
     balanceToner: '/biome5lactoLine/balanceToner',
-    treatmentAmpoule: '/biome5lactoLine/treatmentAmpoule',
+    retexturizingRosyMask: '/biome5lactoLine/retexturizingRosyMask',
     balanceMoisturizer: '/biome5lactoLine/balanceMoisturizer',
+    balanceGelCleanser: '/biome5lactoLine/balanceGelCleanser',
+    treatmentAmpoule: '/biome5lactoLine/treatmentAmpoule',
   },
   proMoistureLine: {
     enzymePowderWash: '/proMoistureLine/enzymePowderWash',
     creamyToner: '/proMoistureLine/creamyToner',
     moistureSheetMask: '/proMoistureLine/moistureSheetMask',
     intensiveCream: '/proMoistureLine/intensiveCream',
+    milkToningClayMask: '/proMoistureLine/milkToningClayMask',
   },
   heartLeafLine: {
     blemishphBalancedCleansingFoam: '/heartLeafLine/blemishphBalancedCleansingFoam',
     blemishToner: '/heartLeafLine/blemishToner',
     intensiveCalmingEssence: '/heartLeafLine/intensiveCalmingEssence',
     blemishMoistureCream: '/heartLeafLine/blemishMoistureCream',
+    poreMeltingGelMask: '/heartLeafLine/poreMeltingGelMask',
   },
 };
